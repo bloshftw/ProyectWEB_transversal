@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-    'assets/imagenes-carrousel/1',
-    'assets/imagenes-carrousel/2'
+   
+    '/assets/imagenes-carrusel/2.jpg',
+    '/assets/imagenes-carrusel/3.jpg',
+    '/assets/imagenes-carrusel/4.JPG'
     ];
 
     function updateImage() {
