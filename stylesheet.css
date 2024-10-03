@@ -9,14 +9,15 @@
 header {
     display: flex;
     justify-content: space-between;
+    background-color: #C0EBA6;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     padding-left: 5%;
     padding-right: 5%;
    width: 800px;
@@ -28,7 +29,8 @@ nav img {
 }
 
 ul{
-    
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 ul li {
@@ -49,6 +51,7 @@ text-decoration: none;
     display: flex;
     align-items: center;
     width: 100vh;
+    padding-left: 100px;
     
 }
 
