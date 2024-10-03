@@ -3,7 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
    
     '/assets/imagenes-carrusel/2.jpg',
     '/assets/imagenes-carrusel/3.jpg',
-    '/assets/imagenes-carrusel/4.JPG'
+    '/assets/imagenes-carrusel/4.JPG',
+    '/assets/imagenes-carrusel/5.JPG',
+    '/assets/imagenes-carrusel/6.JPG',
+    '/assets/imagenes-carrusel/7.JPG'
     ];
 
     function updateImage() {
