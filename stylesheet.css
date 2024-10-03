@@ -6,6 +6,11 @@
 
 /*SECCION HEADER PAGINA WEB NAV, INCLUYE REDES Y LOGO DE LA INSTITUCION*/
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -14,7 +19,7 @@ nav {
     padding-bottom: 5px;
     padding-left: 5%;
     padding-right: 5%;
-   width: 80vh;
+   width: 800px;
 
 }
 
@@ -22,9 +27,13 @@ nav img {
     height: 100px;
 }
 
+ul{
+    
+}
+
 ul li {
     display: inline-block;
-    padding: 0px 10px;
+    padding: 0px 5px;
 }
 
 a {
@@ -33,14 +42,25 @@ text-decoration: none;
 
 }
 
-
+/*REDES LOGOS*/
 
 .container_redes{
 
     display: flex;
     align-items: center;
-    height: 100%;
-    width: 50%;
+    width: 100vh;
+    
+}
+
+.container_redes ul{
+
+
+}
+
+.container_redes ul i {
+
+    padding: 0px 10px;
+
 }
 
 /*-------------------------------------------------------------*/
