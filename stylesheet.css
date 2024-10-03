@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*SECCION HEADER PAGINA WEB, INCLUYE REDES Y LOGO DE LA INSTITUCION*/
+.container_header{
+    background-color: rgb(251, 251, 251);
+    height: 22vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: absolute;
+    
+
+}
+
+.container_header img {
+    height: 100px;
+}
+/*-------------------------------------------------------------*/
+
+/*SECCION DE NAVEGACION, INCLUYE LOGO*/
