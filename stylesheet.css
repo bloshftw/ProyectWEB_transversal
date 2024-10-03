@@ -4,21 +4,43 @@
 }
 
 
-/*SECCION HEADER PAGINA WEB, INCLUYE REDES Y LOGO DE LA INSTITUCION*/
-.container_header{
-    background-color: rgb(251, 251, 251);
-    height: 22vh;
+/*SECCION HEADER PAGINA WEB NAV, INCLUYE REDES Y LOGO DE LA INSTITUCION*/
+
+nav {
     display: flex;
-    flex-direction: column;
-    margin: 0;
-    position: absolute;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5%;
+    padding-right: 5%;
+   width: 80vh;
 
 }
 
-.container_header img {
+nav img {
     height: 100px;
 }
-/*-------------------------------------------------------------*/
 
-/*SECCION DE NAVEGACION, INCLUYE LOGO*/
+ul li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+a {
+color: white;
+text-decoration: none;
+
+}
+
+
+
+.container_redes{
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+/*-------------------------------------------------------------*/
