@@ -1,18 +1,17 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-   
     '/assets/imagenes-carrusel/2.jpg',
     '/assets/imagenes-carrusel/3.jpg',
     '/assets/imagenes-carrusel/4.JPG',
     '/assets/imagenes-carrusel/5.JPG',
     '/assets/imagenes-carrusel/6.JPG',
+    '/assets/imagenes-carrusel/8.JPG',
     '/assets/imagenes-carrusel/11.JPG',
     '/assets/imagenes-carrusel/12.JPG',
     '/assets/imagenes-carrusel/13.JPG',
     '/assets/imagenes-carrusel/14.JPG',
-    '/assets/imagenes-carrusel/15.JPG',
-    '/assets/imagenes-carrusel/16.JPG'
-    
+    '/assets/imagenes-carrusel/15.JPG'
+
     ];
 
     function updateImage() {
