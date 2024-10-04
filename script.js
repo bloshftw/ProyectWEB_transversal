@@ -6,7 +6,13 @@ document.addEventListener('DOMContentLoaded', function() {
     '/assets/imagenes-carrusel/4.JPG',
     '/assets/imagenes-carrusel/5.JPG',
     '/assets/imagenes-carrusel/6.JPG',
-    '/assets/imagenes-carrusel/7.JPG'
+    '/assets/imagenes-carrusel/11.JPG',
+    '/assets/imagenes-carrusel/12.JPG',
+    '/assets/imagenes-carrusel/13.JPG',
+    '/assets/imagenes-carrusel/14.JPG',
+    '/assets/imagenes-carrusel/15.JPG',
+    '/assets/imagenes-carrusel/16.JPG'
+    
     ];
 
     function updateImage() {
