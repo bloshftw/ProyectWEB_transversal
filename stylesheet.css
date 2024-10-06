@@ -1,74 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-
-/*SECCION HEADER PAGINA WEB NAV, INCLUYE REDES Y LOGO DE LA INSTITUCION*/
-
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #eee;
-    height: 110px;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 5%;
-    padding-right: 5%;
-   width: 800px;
-
-}
-
-nav img {
-    height: 100px;
-}
-
-ul{
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
-}
-
-ul li {
-    display: inline-block;
-    padding: 0px 5px;
-}
-
-a {
-color: white;
-text-decoration: none;
-
-}
-
-/*REDES LOGOS*/
-
-.container_redes{
-
-    display: flex;
-    align-items: center;
-    width: 100vh;
-    padding-left: 200px;
-    
-}
-
-.container_redes ul{
-
-
-}
-
-.container_redes ul i {
-
-    padding: 0px 10px;
-
+    box-sizing: border-box;
 }
 
 /*-------------------------------------------------------------*/
-
 
 /*CARRUSEL*/
 
@@ -79,14 +15,33 @@ text-decoration: none;
     justify-content: center;
     position: relative;
     height: 100vh;
+    width: 100%;
     background-color: #f0f0f0;
+    overflow: hidden;
 }
 
 .carousel-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* Transición suave */
+}
+
+.carousel-img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.carousel-img.prev {
+    transform: translateX(-100%); /* Imagen anterior se desliza a la izquierda */
+}
+
+.carousel-img.next {
+    transform: translateX(100%); /* Imagen siguiente se desliza a la derecha */
 }
 
 .carousel-btn {
@@ -109,9 +64,59 @@ text-decoration: none;
     right: 10px;
 }
 
+/*HEADER CARRUSEL*/
+.container_carrusel_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
 
+nav ul li {
+    display: inline-block;
+}
 
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    transition: color 0.3s;
+}
 
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/* Redes sociales */
+.container_redes ul {
+    display: flex;
+    list-style: none;
+}
+
+.container_redes ul li {
+    padding: 0 10px;
+}
+
+.container_redes ul li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.container_redes ul li a:hover {
+    color: #f0a500;
+}
 
 /*-------------------------------------------------------------*/
