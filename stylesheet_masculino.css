@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+
+/*-------------------------------------------------------------*/
+
+/* CARRUSEL */
+.carousel-title{
+
+    position: absolute;
+    top: 50%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    opacity: 0; /* Oculto inicialmente */
+    transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
+    z-index: 2; /* Asegúrate de que el título esté por encima de las imágenes */
+
+}
+
+.container_carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background-color:  rgba(0, 0, 0, 0.85);
+    overflow: hidden;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Asegura que la transición sea fluida */
+    transform: translateY(0); /* Mantiene la imagen en su lugar */
+    filter: brightness(0.5);
+}
+
+.carousel-img.active {
+    opacity: 1;
+    position: relative;
+    transform: translateY(0);
+}
+
+.carousel-item {
+    display: none; /* Ocultar todas las imágenes por defecto */
+}
+
+.carousel-item.active {
+    display: block; /* Solo mostrar la imagen activa */
+}
+
+.carousel-item.active ~ .carousel-title {
+    opacity: 1; /* Hacerlo visible cuando la imagen es activa */
+}
+
+.carousel-img.prev {
+    transform: translateX(-100%); /* Imagen anterior se desliza a la izquierda */
+}
+
+.carousel-img.next {
+    transform: translateX(100%); /* Imagen siguiente se desliza a la derecha */
+}
+
+.carousel-btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+/*HEADER CARRUSEL*/
+.container_carrusel_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+
+/*EFECTO SUAVE "CONTACTOS"*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*SLIDER CATEGORIAS*/
+.submenu {
+
+    display: none;
+    position: absolute;
+    top: 100%; /* Aparece debajo del botón de "Categorías" */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+
+}
+
+.submenu li {
+margin: 10px 0px;
+}
+
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.submenu.active {
+    display: block;
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Redes sociales */
+.container_redes ul {
+    display: flex;
+    list-style: none;
+}
+
+.container_redes ul li {
+    padding: 0 10px;
+}
+
+.container_redes ul li a {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.container_redes ul li a:hover {
+    color: #f0a500;
+}
+
+/*-------------------------------------------------------------*/
+
+
+
+/*Inicio----------Footer-content---------*/
+
+.footer-content{
+    display: flex;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.85);
+    padding: 1.5rem; 
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content div{
+    margin-bottom: 20px;
+}
+
+.footer-content .Logo{
+    height: auto;
+    width:17%;
+    margin: 10px;
+    margin-right: 200px;
+
+}
+
+.separador {
+    height: 2px;
+    width: 700px;
+    background-color: #ccc;
+    margin: 20px 20px;
+}
+/*Fin----------Footer----------*/
+
+/*Inicio------------------------------MASCULINO-------------------------------------*/
+
+
+
+
+
+/*Fin---------------------------------MASCULINO-------------------------------------*/
+
+/*Inicio------------------------------FEMENINO-------------------------------------*/
+
+
+/*fin------------------------------MASCULINO-------------------------------------*/
