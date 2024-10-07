@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [
         './assets/imagenes-carrusel/2.jpg',
         './assets/imagenes-carrusel/3.jpg',
-        './assets/imagenes-carrusel/4.jpg',
+        './assets/imagenes-carrusel/4.JPG',
         './assets/imagenes-carrusel/6.jpg',
         './assets/imagenes-carrusel/8.jpg',
         './assets/imagenes-carrusel/11.jpg',

@@ -120,14 +120,26 @@ nav ul li a:hover {
 
 /*-------------------------------------------------------------*/
 
-/*Inicio----------Footer----------*/
-.footer{
+
+
+
+
+/*Inicio----------Footer-content---------*/
+.footer-content{
+    display: flex;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 24px;
+    font-size: 14px;
     color: white;
     background-color:  rgba(0, 0, 0, 0.85);
     padding: 1.5rem; 
     text-align: center;
+
+}
+
+.footer-content .Logo{
+    height: auto;
+    width:7%;
+    margin: 10px;
 
 }
 /*Fin----------Footer----------*/
