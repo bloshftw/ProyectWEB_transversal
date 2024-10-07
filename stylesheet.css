@@ -122,8 +122,6 @@ nav ul li a:hover {
 
 
 
-
-
 /*Inicio----------Footer-content---------*/
 .footer-content{
     display: flex;
@@ -132,7 +130,7 @@ nav ul li a:hover {
     color: white;
     background-color:  rgba(0, 0, 0, 0.85);
     padding: 1.5rem; 
-    text-align: center;
+    text-align: column;
 
 }
 
