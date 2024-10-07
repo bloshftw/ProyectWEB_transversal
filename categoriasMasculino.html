@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="script.js" defer></script>
+    <script src="script_masculino.js" defer></script>
     <script src="https://kit.fontawesome.com/4a3929e8e1.js" crossorigin="anonymous"></script>
     <title>Plantel Masculino</title>
     <link rel="icon" href="assets/logos-comercio/Screenshot_1-removebg-preview (1).png" type="image/png">
@@ -12,17 +12,13 @@
 <body>
     
 
-    <div class="container_img_masculina">
-
-        <img src="/assets/Imagenes-categorias/1ra_A-Masculina.jpg" alt="Primera masculina">
-
-
-        <!--HEADER-->
+    <div class="container_carrusel">
+        <!--Header Carrusel-->
         <div class="container_carrusel_header">
             <nav>
                 <ul>
                     <li><a href="index.html">INICIO</a></li>
-                    <li><a href="#historia">HISTORIA</a></li>
+                    <li><a href="historia.html">HISTORIA</a></li>
                     <li>
                         <a href="#categorias" id="categorias-btn">CATEGORÍAS</a>
                             <ul class="submenu">
@@ -43,7 +39,12 @@
                     <li><a href="https://www.tiktok.com/@comerciovoleyvm" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                 </ul>
             </div>
-        </div>
+        </div> <!-- Fin del header del carrusel -->
+
+        <img id="carousel-image" src="assets/imagenes-carrusel/11.jpg" alt="Imagen carrusel" class="carousel-img">
+        <button id="prev" class="carousel-btn">⮜</button>
+        <button id="next" class="carousel-btn">⮞</button>
+    </div>
 
         <footer class="footer-content" id="contact">
             <div class="info">
