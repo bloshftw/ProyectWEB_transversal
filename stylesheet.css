@@ -80,10 +80,12 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    position: relative;
 }
 
 nav ul li {
     display: inline-block;
+    position: relative;
 }
 
 nav ul li a {
@@ -96,6 +98,54 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #f0a500;
+}
+
+
+/*EFECTO SUAVE "CONTACTOS"*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*SLIDER CATEGORIAS*/
+.submenu {
+
+    display: none;
+    position: absolute;
+    top: 100%; /* Aparece debajo del botón de "Categorías" */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+
+}
+
+.submenu li {
+margin: 10px 0px;
+}
+
+
+.submenu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.submenu.active {
+    display: block;
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Redes sociales */

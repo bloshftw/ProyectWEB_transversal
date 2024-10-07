@@ -44,3 +44,17 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselImage.classList.add('active');
     }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
 });
+
+
+/*SLIDER NAV*/ 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const categoriasBtn = document.getElementById('categorias-btn');
+    const submenu = document.querySelector('.submenu');
+
+    categoriasBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Evitar que el enlace recargue la página
+        submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
+    });
+});
+
