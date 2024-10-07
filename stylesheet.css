@@ -2,11 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ;
 }
 
 /*-------------------------------------------------------------*/
-
-/*CARRUSEL*/
 
 /* CARRUSEL */
 .container_carrusel {
@@ -120,3 +119,15 @@ nav ul li a:hover {
 }
 
 /*-------------------------------------------------------------*/
+
+/*Inicio----------Footer----------*/
+.footer{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.85);
+    padding: 1.5rem; 
+    text-align: center;
+
+}
+/*Fin----------Footer----------*/
