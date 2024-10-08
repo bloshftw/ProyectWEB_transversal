@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         './assets/imagenes-carrusel/12.jpg',
         './assets/Mini-voley/7.JPG',
         './assets/Mini-voley/27.JPG',
-        './assets/Mini-voley/105.JPG',
-        './assets/imagenes-carrusel/15.jpg'
+        './assets/Mini-voley/105.JPG'
     ];
 
     let currentIndex = 0;

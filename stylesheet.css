@@ -100,7 +100,6 @@ nav ul li a:hover {
     color: #f0a500;
 }
 
-
 /*EFECTO SUAVE "CONTACTOS"*/
 
 html {
@@ -198,6 +197,7 @@ background-color: #f9f9f9;
 width: 100%;
 height: auto;
 border-radius: 8px;
+margin-left: 20px;
 
 }
 
@@ -237,8 +237,18 @@ color: #333;
     margin-top: 54px;
     text-align: center;
     font-size: 32px;
-
-    
+     
+}
+.ubicacion-del-club{
+    margin-top: 30px;
+    height: 500px;
+    width: auto;
+    border-radius: 50px;
+}
+.txtUbicacion{
+    margin-top: 15px;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* inicio donde encontrarnos*/
 
