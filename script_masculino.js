@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        '/assets/Imagenes-categorias/1ra_A-Masculina.jpg',
-        '/assets/Imagenes-categorias/A2-A-Masculino.jpg',
-        '/assets/Imagenes-categorias/maxiMasc.jpg'
+        './assets/Imagenes-categorias/1ra_A-Masculina.jpg',
+        './assets/Imagenes-categorias/A2-A-Masculino.jpg',
+        './assets/Imagenes-categorias/maxiMasc.jpg'
     ];
 
     let currentIndex = 0;
