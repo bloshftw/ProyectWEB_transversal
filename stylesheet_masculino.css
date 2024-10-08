@@ -204,6 +204,48 @@ margin: 10px 0px;
 
 
 
+/*Inicio--------PLANTELES MASCULINO----------------------------------*/
+/*TITULO*/
+.container_planteles_title{
+height: 20vh;
+color: white;
+background-color:  rgba(0, 0, 0, 0.85);
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.container_planteles_title h2 {
+    font-size: 3.7rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.container_planteles_jugadores {
+
+height: 1000px;
+background-color: white;
+background-color:  rgba(0, 0, 0, 0.85);
+width: 100%;
+
+}
+
+.container_planteles_jugadores_tarjeta{
+    height: 100%;
+    padding: 20px;
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+
+
+/*fin-----------PLANTELES MASCULINO-------------------------------------*/
+
 /*Inicio----------Footer-content---------*/
 
 .footer-content{
@@ -243,16 +285,3 @@ margin: 10px 0px;
     margin: 20px 20px;
 }
 /*Fin----------Footer----------*/
-
-/*Inicio------------------------------MASCULINO-------------------------------------*/
-
-
-
-
-
-/*Fin---------------------------------MASCULINO-------------------------------------*/
-
-/*Inicio------------------------------FEMENINO-------------------------------------*/
-
-
-/*fin------------------------------MASCULINO-------------------------------------*/
