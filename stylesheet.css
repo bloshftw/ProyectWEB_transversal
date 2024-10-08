@@ -171,6 +171,72 @@ margin: 10px 0px;
 /*-------------------------------------------------------------*/
 
 
+/*SECCION QUIENES SOMOS*/
+
+.container_quienesSomos{
+    height: 1000px;
+width: 100%;
+padding: 50px 0px;
+background-color: #f9f9f9;
+}
+
+.container_quienesSomos1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container_quienesSomos1_img{
+    flex: 1;
+    padding-right: 20px;
+}
+
+.container_quienesSomos1_img img{
+
+width: 100%;
+height: auto;
+border-radius: 8px;
+
+}
+
+/*TEXTO*/
+
+.container_quienesSomos1_texto {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.container_quienesSomos1_texto h2{
+font-size: 2.5rem;
+margin-bottom: 20px;
+}
+
+.container_quienesSomos1_texto p{
+font-size: 1.2rem;
+line-height: 1.6;
+color: #333;
+}
+
+/*RESPONSIVE PANTALLAS PEQUEÑAS*/
+@media (max-width: 768px) {
+    .quienes-somos-container {
+      flex-direction: column; /* Cambiar el diseño a columna en pantallas pequeñas */
+    }
+  
+    .quienes-somos-image, .quienes-somos-texto {
+      padding: 0; /* Eliminar padding lateral en pantallas pequeñas */
+      margin-bottom: 20px; /* Espacio entre los contenedores */
+    }
+}
+
+
+/*SECCION QUIENES SOMOS*/
+
+
+
 
 /*Inicio----------Footer-content---------*/
 
@@ -212,15 +278,3 @@ margin: 10px 0px;
 }
 /*Fin----------Footer----------*/
 
-/*Inicio------------------------------MASCULINO-------------------------------------*/
-
-
-
-
-
-/*Fin---------------------------------MASCULINO-------------------------------------*/
-
-/*Inicio------------------------------FEMENINO-------------------------------------*/
-
-
-/*fin------------------------------MASCULINO-------------------------------------*/
