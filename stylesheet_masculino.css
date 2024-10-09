@@ -205,6 +205,8 @@ margin: 10px 0px;
 
 
 /*Inicio--------PLANTELES MASCULINO----------------------------------*/
+
+
 /*TITULO*/
 .container_planteles_title{
 height: 20vh;
@@ -214,9 +216,17 @@ display: flex;
 text-align: center;
 justify-content: center;
 align-items: center;
-
-
 }
+
+.container_planteles_title::after {
+    content: "";
+    position: absolute;
+    bottom: 30px; /* Ubicar la línea en la parte inferior del título */
+    left: 10%; /* Espaciado lateral izquierdo */
+    right: 10%; /* Espaciado lateral derecho */
+    height: 2px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+  }
 
 .container_planteles_title h2 {
     font-size: 3.7rem;
@@ -226,20 +236,61 @@ align-items: center;
 
 .container_planteles_jugadores {
 
-height: 1000px;
+height: 1900px;
 background-color: white;
 background-color:  rgba(0, 0, 0, 0.85);
 width: 100%;
-
+display: flex;
+justify-content: center;
+padding: 20px;
 }
 
 .container_planteles_jugadores_tarjeta{
     height: 100%;
     padding: 20px;
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-right: 1%;
+    margin-left: 1%;
     background-color: #ccc;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.tarjeta{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
+    overflow: hidden;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 315px;
+    object-fit:cover;
+}
+
+.descripcion{
+    padding-bottom: 20px;
+}
+
+.descripcion h3{
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+
+.descripcion p{
+font-size: 1rem;
+color: #555;
+
+
 }
 
 
