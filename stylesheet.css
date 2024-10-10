@@ -172,6 +172,16 @@ margin: 10px 0px;
 
 /*SECCION QUIENES SOMOS*/
 
+.separados_quienesSomos {
+    border: 0;
+    height: 2px; /* Grosor de la línea */
+    background-color: #333; /* Color de la línea */
+    margin: 40px 0; /* Espaciado alrededor de la línea */
+    width: 80%; /* Ancho de la línea */
+    margin-left: auto; /* Centrar la línea */
+    margin-right: auto; /* Centrar la línea */
+}
+
 .container_quienesSomos{
 width: 100%;
 padding: 50px 0px;
@@ -252,7 +262,16 @@ color: #333;
 }
 /* inicio donde encontrarnos*/
 
+.container_dondeEstamos{
 
+height: 150px;
+}
+
+
+.container_donde_encontrarnos_title{
+
+
+}
 
 
 /* fin donde encontrarnos*/
