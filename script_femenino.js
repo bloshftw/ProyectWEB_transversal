@@ -39,12 +39,12 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImage(prevIndex);
     });
 
-    // Cargar la primera imagen con un pequeño retraso para que tenga efecto de fade in
+    // Cargar la primera imagen con un pequeño retraso para que tenga efecto
     setTimeout(() => {
         carouselImage.src = images[currentIndex];
         carouselImage.classList.add('active');
         carouselTitle.style.opacity = 1; // Hacer que el título aparezca desde el inicio
-    }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
+    }, 100); //
 });
 /*SLIDER NAV*/ 
 
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const submenu = document.querySelector('.submenu');
 
     categoriasBtn.addEventListener('click', function(event) {
-        event.preventDefault(); // Evitar que el enlace recargue la página
+        event.preventDefault(); //
         submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
     });
 });
