@@ -297,3 +297,34 @@ color: #333;
 }
 /*Fin----------Footer----------*/
 
+/*------------ Historia-------------*/
+
+.historia{
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+}
+.titulo-historia{
+    color: white;
+    margin-top: 70px; 
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 2;
+}
+.txt-historia{
+
+}
+
+.imagen-historia{
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    opacity: 10%;
+    height: 100%;
+    width: 100%;
+
+}
+
+/*------------ Historia-------------*/
