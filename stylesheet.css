@@ -7,6 +7,7 @@
 
 /*-------------------------------------------------------------*/
 
+
 /* CARRUSEL */
 .container_carrusel {
     display: flex;
@@ -184,7 +185,7 @@ margin: 10px 0px;
 
 .container_quienesSomos{
 width: 100%;
-padding: 50px 0px;
+padding: 30px 0px;
 background-color: #f9f9f9;
 }
 
@@ -242,66 +243,113 @@ color: #333;
 }
 
 
-/* fin SECCION QUIENES SOMOS*/
-.ubicacion{
-    margin-top: 54px;
-    text-align: center;
-    font-size: 32px;
-     
-}
-.ubicacion-del-club{
-    margin-top: 30px;
-    height: 500px;
-    width: auto;
-    border-radius: 50px;
-}
-.txtUbicacion{
-    margin-top: 15px;
-    font-size: 24px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-/* inicio donde encontrarnos*/
+
+/* DONDE ESTAMOS SECCION INICIO*/
+
 
 .container_dondeEstamos{
+    padding: 0px 0px;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
+.container_donde_encontrarnos_title {
+margin-bottom: 0px;
+color: #333;
 height: 100px;
-color: white;
-    background-color:  rgba(0, 0, 0, 0.25);
-    justify-content: center;
 display: flex;
+justify-content: center;
+text-align: center;
+align-items: center;
+
+}
+
+.container_dondeEstamos .container_donde_encontrarnos_title h3 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.container_dondeEstamos p{
+    font-size: 1.5rem;
+    color: #666;
 }
 
 
-.container_donde-encontrarnos_title{
+
+.container_dondeEstamos_ubicacion{
 display: flex;
 justify-content: center;
 align-items: center;
+margin-top: 0px;
+
+
+}
+/*TITULO*/
+/*IMAGEN*/
+.container_dondeEstamos_ubicacion img{
+    max-width: 80%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
 }
 
-.container_donde-encontrarnos_title h3 {
-    font-size: 4.0rem;
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container_donde-encontrarnos_title h3 {
+        font-size: 2.5rem; /* Título más pequeño en pantallas pequeñas */
+    }
+
+    .container_dondeEstamos_ubicacion img {
+        max-width: 100%; /* La imagen ocupará el 100% del ancho de la pantalla en móviles */
+    }
 }
 
+/*DONDE ESTAMOS SECCION FINAL*/
 
+/*SECCION CANAL DE DIFUSION INICIO*/
 
-/*CONTENIDO DONDE ESTAMOS*/
+.container_canalDifusion{
+text-align: center;
+padding: 50px 0px;
+background-color: #f0f0f0;
+margin-top: 40px;
 
-.container_dondeEstamos-contenido{
-    height: 470px;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
 }
 
-.container_dondeEstamos-ubicacion-img img{
-height: 300px;
-width: auto;
-border-radius: 20px;
+.container_canalDifusion h3 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-/*CONTENIDO DONDE ESTAMOS*/
+.container_canalDifusion .whatsapp-link{
+    display: inline-block;
+    margin-bottom: 20px;
+}
 
-/* fin donde encontrarnos*/
+.container_canalDifusion img {
+    height: 150px;
+    width: 150px;
+    transform: scale(1.1);
+
+}
+
+.container_canalDifusion p {
+
+    font-size: 1.5rem;
+    color: #666;
+    
+    
+    }
+
+
+
+
+/*SECCION CANAL DE DIFUSION FINAL*/
+
+
 
 /*Inicio----------Footer-content---------*/
 
