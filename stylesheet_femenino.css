@@ -231,8 +231,7 @@ align-items: center;
 
 .container_planteles_title h2 {
     font-size: 3.7rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    color: #a5a5a5;   
 
 }
 
@@ -334,15 +333,17 @@ align-items: center;
 
 .descripcion h3{
     margin: 10px 0;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .descripcion p{
-font-size: 1rem;
+font-size: 1.3rem;
 color: #a5a5a5;
 
 
 }
+
+
 
 
 
