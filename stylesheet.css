@@ -266,17 +266,40 @@ color: #333;
 
 height: 100px;
 color: white;
-    background-color:  rgba(0, 0, 0, 0.85);
+    background-color:  rgba(0, 0, 0, 0.25);
     justify-content: center;
 display: flex;
 }
 
 
-.container_donde_encontrarnos_title{
-
-
+.container_donde-encontrarnos_title{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
+.container_donde-encontrarnos_title h3 {
+    font-size: 4.0rem;
+}
+
+
+
+/*CONTENIDO DONDE ESTAMOS*/
+
+.container_dondeEstamos-contenido{
+    height: 470px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.container_dondeEstamos-ubicacion-img img{
+height: 300px;
+width: auto;
+border-radius: 20px;
+}
+
+/*CONTENIDO DONDE ESTAMOS*/
 
 /* fin donde encontrarnos*/
 
