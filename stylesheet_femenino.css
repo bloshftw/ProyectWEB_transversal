@@ -19,9 +19,9 @@
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-    opacity: 0; /* Oculto inicialmente */
-    transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
-    z-index: 2; /* Asegúrate de que el título esté por encima de las imágenes */
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+    z-index: 2; 
 
 }
 
@@ -44,8 +44,8 @@
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; /* Asegura que la transición sea fluida */
-    transform: translateY(0); /* Mantiene la imagen en su lugar */
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+    transform: translateY(0); 
     filter: brightness(0.5);
 }
 
@@ -56,15 +56,15 @@
 }
 
 .carousel-item {
-    display: none; /* Ocultar todas las imágenes por defecto */
+    display: none; 
 }
 
 .carousel-item.active {
-    display: block; /* Solo mostrar la imagen activa */
+    display: block; 
 }
 
 .carousel-item.active ~ .carousel-title {
-    opacity: 1; /* Hacerlo visible cuando la imagen es activa */
+    opacity: 1;
 }
 
 .carousel-img.prev {
@@ -144,7 +144,7 @@ html {
 
     display: none;
     position: absolute;
-    top: 100%; /* Aparece debajo del botón de "Categorías" */
+    top: 100%;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -221,11 +221,11 @@ align-items: center;
 .container_planteles_title::after {
     content: "";
     position: absolute;
-    bottom: 30px; /* Ubicar la línea en la parte inferior del título */
-    left: 10%; /* Espaciado lateral izquierdo */
-    right: 10%; /* Espaciado lateral derecho */
-    height: 2px; /* Grosor de la línea */
-    background-color: white; /* Color de la línea */
+    bottom: 30px; 
+    left: 10%; 
+    right: 10%; 
+    height: 2px;
+    background-color: white; 
     
   }
 

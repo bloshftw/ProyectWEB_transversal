@@ -5,6 +5,7 @@
     ;
 }
 
+
 /*-------------------------------------------------------------*/
 
 
@@ -112,7 +113,7 @@ html {
 
     display: none;
     position: absolute;
-    top: 100%; /* Aparece debajo del botón de "Categorías" */
+    top: 100%; 
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -199,12 +200,12 @@ color: #333;
 .separador_quienesSomos {
     
     border: 0;
-    height: 2px; /* Grosor de la línea */
-    background-color: #333; /* Color de la línea */
-    margin: 10px 0; /* Espaciado alrededor de la línea */
-    width: 80%; /* Ancho de la línea */
-    margin-left: auto; /* Centrar la línea */
-    margin-right: auto; /* Centrar la línea */
+    height: 2px;
+    background-color: #333; 
+    margin: 10px 0; 
+    width: 80%; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
 
 .container_quienesSomos{
@@ -265,12 +266,12 @@ color: #666;
 /*RESPONSIVE PANTALLAS PEQUEÑAS*/
 @media (max-width: 768px) {
     .quienes-somos-container {
-      flex-direction: column; /* Cambiar el diseño a columna en pantallas pequeñas */
+      flex-direction: column; 
     }
   
     .quienes-somos-image, .quienes-somos-texto {
-      padding: 0; /* Eliminar padding lateral en pantallas pequeñas */
-      margin-bottom: 20px; /* Espacio entre los contenedores */
+      padding: 0;
+      margin-bottom: 20px;
     }
 }
 
@@ -330,11 +331,11 @@ margin-top: 0px;
 /* Responsive para pantallas pequeñas */
 @media (max-width: 768px) {
     .container_donde-encontrarnos_title h3 {
-        font-size: 2.5rem; /* Título más pequeño en pantallas pequeñas */
+        font-size: 2.5rem; 
     }
 
     .container_dondeEstamos_ubicacion img {
-        max-width: 100%; /* La imagen ocupará el 100% del ancho de la pantalla en móviles */
+        max-width: 100%; 
     }
 }
 
@@ -380,6 +381,77 @@ margin-top: 40px;
 
 
 /*SECCION CANAL DE DIFUSION FINAL*/
+
+
+/*SECCION CONTACTO FORMULARIO INICIO*/
+
+
+/* Título del formulario */
+h6 {
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el formulario */
+.form {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.form-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+
+}
+
+label {
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Mensajes de error y éxito */
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.success {
+    color: green;
+    margin-top: 20px;
+}
+
+/*SECCION CONTACTO FORMULARIO FINAL*/
+
 
 
 
