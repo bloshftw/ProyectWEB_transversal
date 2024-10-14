@@ -344,9 +344,6 @@ color: #a5a5a5;
 }
 
 
-
-
-
 /*fin-----------PLANTELES MASCULINO-------------------------------------*/
 
 /*Inicio----------Footer-content---------*/
@@ -374,17 +371,31 @@ color: #a5a5a5;
 }
 
 .footer-content .Logo{
+    align-items: center;
     height: auto;
-    width:17%;
+    width:30%;
     margin: 10px;
-    margin-right: 200px;
 
 }
 
 .separador {
     height: 2px;
-    width: 700px;
+    width: 70%;
     background-color: #ccc;
-    margin: 20px 20px;
+}
+@media (max-width: 768px){
+    .info{
+        flex-direction: column;
+    }
+    .footer-content .Logo{
+        height: auto;
+        width:17%;
+        margin: 10px;
+    
+    }
+    .footer-content p{
+        font-size: 17px;
+    }
+
 }
 /*Fin----------Footer----------*/
