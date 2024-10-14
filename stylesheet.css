@@ -2,12 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    ;
 }
 
-
 /*-------------------------------------------------------------*/
-
 
 /* CARRUSEL */
 .container_carrusel {
@@ -275,10 +272,7 @@ color: #666;
     }
 }
 
-
-
 /* DONDE ESTAMOS SECCION INICIO*/
-
 
 .container_dondeEstamos{
     padding: 0px 0px;
@@ -307,8 +301,6 @@ align-items: center;
     font-size: 1.5rem;
     color: #666;
 }
-
-
 
 .container_dondeEstamos_ubicacion{
 display: flex;
@@ -370,21 +362,13 @@ margin-top: 40px;
 }
 
 .container_canalDifusion p {
-
     font-size: 1.5rem;
     color: #666;
-    
-    
-    }
-
-
-
+}
 
 /*SECCION CANAL DE DIFUSION FINAL*/
 
-
 /*SECCION CONTACTO FORMULARIO INICIO*/
-
 
 /* Título del formulario */
 h6 {
@@ -451,10 +435,26 @@ button:hover {
 }
 
 /*SECCION CONTACTO FORMULARIO FINAL*/
+/*-----------------Responsive------------------*/
+@media (max-width: 768px){
+    .indexTotal{
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+
+    }
+    .container_carrusel{
+        width: 100%;
+        height: auto;
+    }
+    .quienes-somos-container{
+       width: 100%;
+    }
 
 
+}
 
-
+/*-----------------Responsive------------------*/
 /*Inicio----------Footer-content---------*/
 
 .footer-content{

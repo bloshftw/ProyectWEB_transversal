@@ -47,161 +47,142 @@
         <button id="next" class="carousel-btn">⮞</button>
     </div>
 
-<div class="title_nosotros">
-    <h3>NOSOTROS</h3>
-</div>
+    <div class="title_nosotros">
+        <h3>NOSOTROS</h3>
+    </div>
 
-<hr class="separador_quienesSomos">
+    <section class="indexTotal">
 
 
+        <hr class="separador_quienesSomos">
 
-    <!-- Inicio--SECCION QUIENES SOMOS-->
-    <section class="container_quienesSomos">
-        <div class="container_quienesSomos1">
-            <div class="container_quienesSomos1_img">
-            <img src="assets/Mini-voley/27.JPG" alt="imagen 1">
-        </div>
-
-            <div class="container_quienesSomos1_texto">
-                <h2>NUESTRA MISION</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
-                odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
-            </div>
-        </div>
-
-        <div class="container_quienesSomos1">
-
-            <div class="container_quienesSomos1_texto">
-                <h2>COMPROMISO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
-                odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
+        <!-- Inicio--SECCION QUIENES SOMOS-->
+        <section class="container_quienesSomos">
+            <div class="container_quienesSomos1">
+                <div class="container_quienesSomos1_img">
+                    <img src="assets/Mini-voley/27.JPG" alt="imagen 1">
+                </div>
+                <div class="container_quienesSomos1_texto">
+                    <h2>NUESTRA MISION</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
+                    odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
+                </div>
             </div>
 
-            <div class="container_quienesSomos1_img">
-                <img src="assets/imagenes-carrusel/15.jpg" alt="imagen 2">
+            <div class="container_quienesSomos1">
+
+                <div class="container_quienesSomos1_texto">
+                    <h2>COMPROMISO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
+                    odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
+                </div>
+                <div class="container_quienesSomos1_img">
+                    <img src="assets/imagenes-carrusel/15.jpg" alt="imagen 2">
+                </div>
             </div>
-        </div>
-
-        <div class="container_quienesSomos1">
-            <div class="container_quienesSomos1_img">
-            <img src="assets/Mini-voley/1.jpg.jpg" alt="imagen 3" class="imagen_enano">
-        </div>
-
-            <div class="container_quienesSomos1_texto">
-                <h2>NUESTRO SEMILLERO</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
-                odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
+            <div class="container_quienesSomos1">
+                <div class="container_quienesSomos1_img">
+                    <img src="assets/Mini-voley/1.jpg.jpg" alt="imagen 3" class="imagen_enano">
+                </div>
+                <div class="container_quienesSomos1_texto">
+                    <h2>NUESTRO SEMILLERO</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi natus similique,
+                    odit vero vel cumque modi quasi unde voluptas provident cupiditate optio autem, ipsum voluptatem sapiente illo sint, adipisci eius.</p>
+                </div>
             </div>
-        </div>
-        <div>
-
-<hr class="separador_quienesSomos">
-
-
+            <div>
+                <hr class="separador_quienesSomos">
+            </div>
             <!--Fin-------------QUIENES SOMOS---------------->
-        
+            
+
+        </section>
+
+        <!-- Sección Dónde Estamos -->
+        <div class="container_dondeEstamos">
+            <!-- Título -->
+            <div class="container_donde_encontrarnos_title">
+                <h3>¿Donde nos encontramos?</h3>
+            </div>
+            
+            <!-- Mapa o Imagen -->
+            <div class="container_dondeEstamos_ubicacion">
+                <img src="assets/logos-comercio/ubicacion.jpg" alt="Ubicación del club">
+            </div>
+            <p>Pueden encontrarnos en Balcare y Eleodoro Lobos, nuestros horarios puedes verlos <a href="#contact"> aqui</a></p>
+
+        </div>
+
+        <div class="container_canalDifusion">
+
+            <div class="container_canalDifusion_text">
+                <h3>Unete a nuestro canal de Whatsapp!</h3>
+            </div>
+
+            <div class="container_canalDifusion_img">
+                <a href="https://whatsapp.com/channel/0029VaMKfdP2975Az02eam3y" target="_blank" class="whattsapp-link">
+                    <img src="assets/iconos-redes/Iconos/whattsapp.png" alt="Logo whattsapp">
+                </a>
+                <p>Recibe toda la informacion importante directamente en tu celular!</p>
+            </div>
+
+        </div>
+
+        <!--fORMULARIO DE CONTACTO INICIO-->
+
+        <div class="form">
+            <div class="form-container">
+                <h6>Formulario de Contacto</h6>
+                <form id="contactForm">
+                    <label for="name">Nombre: </label>
+                    <input type="text" id="name" name="name" maxlength="50" required>
+                    <span class="error" id="nameError"></span>
+                    <br>
+
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                    <br>
+
+                    <label for="phone">Teléfono: </label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <span class="error" id="phoneError"></span>
+                    <br>
+
+                    <label for="message">Mensaje: </label>
+                    <textarea id="message" name="message" maxlength="300" required></textarea>
+                    <span class="error" id="messageError"></span>
+                    <br>
+
+                    <button type="submit">Enviar</button>
+                </form>
+                <div id="successMessage" class="success"></div>
+            </div>
+        </div>
+
+        <!--FORMULARIO DE CONTACTO FINAL-->
+
+        <!--FOOTER-->
+        <footer class="footer-content" id="contact">
+            <div class="info">
+                <img src="./assets/logos-comercio/Screenshot_1-removebg-preview (1).png" alt="Logo" class="Logo">
+                <div> 
+                    <h2>Horario de Atención</h2>
+                    <p> Lunes, Miercoles y Viernes de 18:00 a 21:00 hs. <br>
+                        Eleodoro Lobos y Balcarce<br>
+                        Villa Mercedes (5730) San Luis - Argentina<br>
+                        Tel: +54 9 2657 50-3079<br>
+                        comerciovoleyvillamercedes@gmail.com </p>
+                </div>
+            </div>
+            <div class="separador"></div>
+            <div>
+                <p> @ Developed by Grabobi Fernando and Rodriguez Luciano </p>
+            </div>
+                
+        </footer>
 
     </section>
-
-
-
-
-
-
-
-
-<!-- Sección Dónde Estamos -->
-<div class="container_dondeEstamos">
-    <!-- Título -->
-     <div class="container_donde_encontrarnos_title">
-     <h3>¿Donde nos encontramos?</h3>
-    </div>
-    
-
-    <!-- Mapa o Imagen -->
-    <div class="container_dondeEstamos_ubicacion">
-        <img src="assets/logos-comercio/ubicacion.jpg" alt="Ubicación del club">
-    </div>
-
-<p>Pueden encontrarnos en Balcare y Eleodoro Lobos, nuestros horarios puedes verlos <a href="#contact"> aqui</a></p>
-
-</div>
-
-
-
-<div class="container_canalDifusion">
-
-    <div class="container_canalDifusion_text">
-        <h3>Unete a nuestro canal de Whatsapp!</h3>
-    </div>
-
-    <div class="container_canalDifusion_img">
-        <a href="https://whatsapp.com/channel/0029VaMKfdP2975Az02eam3y" target="_blank" class="whattsapp-link">
-            <img src="assets/iconos-redes/Iconos/whattsapp.png" alt="Logo whattsapp">
-        </a>
-       <p>Recibe toda la informacion importante directamente en tu celular!</p>
-        
-    </div>
-
-
-</div>
-
-
-<!--fORMULARIO DE CONTACTO INICIO-->
-
-<div class="form">
-<div class="form-container">
-    <h6>Formulario de Contacto</h6>
-    <form id="contactForm">
-        <label for="name">Nombre: </label>
-        <input type="text" id="name" name="name" maxlength="50" required>
-        <span class="error" id="nameError"></span>
-        <br>
-
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
-        <span class="error" id="emailError"></span>
-        <br>
-
-        <label for="phone">Teléfono: </label>
-        <input type="tel" id="phone" name="phone" required>
-        <span class="error" id="phoneError"></span>
-        <br>
-
-        <label for="message">Mensaje: </label>
-        <textarea id="message" name="message" maxlength="300" required></textarea>
-        <span class="error" id="messageError"></span>
-        <br>
-
-        <button type="submit">Enviar</button>
-    </form>
-
-    <!-- Sección donde se mostrará el mensaje de éxito -->
-    <div id="successMessage" class="success"></div>
-</div>
-</div>
-<!--FORMULARIO DE CONTACTO FINAL-->
-
-    <!--FOOTER-->
-<footer class="footer-content" id="contact">
-    <div class="info">
-        <img src="./assets/logos-comercio/Screenshot_1-removebg-preview (1).png" alt="Logo" class="Logo">
-        <div> 
-            <h2>Horario de Atención</h2>
-            <p> Lunes, Miercoles y Viernes de 18:00 a 21:00 hs. <br>
-                Eleodoro Lobos y Balcarce<br>
-                Villa Mercedes (5730) San Luis - Argentina<br>
-                Tel: +54 9 2657 50-3079<br>
-                comerciovoleyvillamercedes@gmail.com </p>
-        </div>
-    </div>
-    <div class="separador"></div>
-    <div>
-        <p> @ Developed by Grabobi Fernando and Rodriguez Luciano </p>
-    </div>
-         
-</footer>
-
 
 </body>
 </html>
