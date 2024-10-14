@@ -204,7 +204,7 @@ margin: 10px 0px;
 
 
 
-/*Inicio--------PLANTELES MASCULINO----------------------------------*/
+/*Inicio--------PLANTELES Femeninos----------------------------------*/
 
 
 /*TITULO*/
@@ -327,25 +327,51 @@ align-items: center;
     text-align: center;
 }
 
-.tarjeta .descripcion{
-
-}
-
 .descripcion h3{
     margin: 10px 0;
     font-size: 1.7rem;
 }
 
 .descripcion p{
-font-size: 1.3rem;
-color: #a5a5a5;
-
-
+    font-size: 1.3rem;
+    color: #a5a5a5;
 }
 
+/*fin-----------PLANTELES Femeninos-------------------------------------*/
+/*------------Responsive------------*/
+@media (max-width: 425px) {
+    .carousel-title{
+        font-size: 1.2rem;
+    }
+    .container_carrusel{
+        width: 100%;
+        height: auto;
+    } 
+    .container_planteles_title h2{
+        font-size: 3rem;
+    }
+    .container_planteles_jugadores{
+        height: 6350px;
+    }
+    .container_planteles_jugadores2{
+        height: 4650px;
+    }
+    .container_planteles_jugadores3{
+        height: 6350px;
+    }
+    .container_planteles_jugadores4{
+        height: 3350px;
+    }
+    .container_planteles_jugadores_tarjeta{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjeta{
+    
+    }
 
-/*fin-----------PLANTELES MASCULINO-------------------------------------*/
-
+}
+/*------------Responsive------------*/
 /*Inicio----------Footer-content---------*/
 
 .footer-content{
