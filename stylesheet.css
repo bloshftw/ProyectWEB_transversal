@@ -531,5 +531,12 @@ margin: 10px 0px;
     width: 100%;
 
 }
+@media (max-width: 768px){
+    .container_carrusel_header{
+        width: 100%;
+        height: auto;
+        
+    }
+}
 
 /*------------ Historia-------------*/

@@ -209,13 +209,13 @@ margin: 10px 0px;
 
 /*TITULO*/
 .container_planteles_title{
-height: 20vh;
-color: white;
-background-color:  rgba(0, 0, 0, 0.85);
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
+    height: 20vh;
+    color: white;
+    background-color:  rgba(0, 0, 0, 0.87);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .container_planteles_title::after {
@@ -343,6 +343,10 @@ align-items: center;
     .carousel-title{
         font-size: 1.2rem;
     }
+    .container_planteles_title::after{
+        bottom:0%;
+        height: 0px;
+    }
     .container_carrusel{
         width: 100%;
         height: auto;
@@ -365,9 +369,6 @@ align-items: center;
     .container_planteles_jugadores_tarjeta{
         display: flex;
         flex-direction: column;
-    }
-    .tarjeta{
-    
     }
 
 }

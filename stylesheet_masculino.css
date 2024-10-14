@@ -212,11 +212,12 @@ margin: 10px 0px;
 .container_planteles_title{
     height: 20vh;
     color: white;
-    background-color:  rgba(0, 0, 0, 0.85);
+    background-color:  rgba(0, 0, 0, 0.87);
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
+  
 }
 
 .container_planteles_title::after {
@@ -233,7 +234,7 @@ margin: 10px 0px;
 .container_planteles_title h2 {
     font-size: 5rem;
     color:#ccc;
-   
+
 
 }
 
@@ -329,6 +330,11 @@ margin: 10px 0px;
     } 
     .container_planteles_title h2{
         font-size: 3rem;
+    }
+    .container_planteles_title::after{
+        bottom:0%;
+        height: 0px;
+    
     }
     .container_planteles_jugadores{
         height: 5100px;
