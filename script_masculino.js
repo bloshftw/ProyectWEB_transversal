@@ -7,21 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentIndex = 0;
     const carouselImage = document.getElementById('carousel-image');
-    const carouselTitle = document.querySelector('.carousel-title'); // Selecciona el título
 
-    // Función para actualizar la imagen y el título con efecto de desvanecimiento
+    // Función para actualizar imagen
     function updateImage(newIndex) {
-        // Remover la clase activa para iniciar el fade out
+        // Remover la clase activa 
         carouselImage.classList.remove('active');
-        carouselTitle.style.opacity = 0; // Hacer que el título se desvanezca
 
-        // Esperar que la imagen se desvanezca antes de cambiar el src
         setTimeout(() => {
             currentIndex = newIndex;
             carouselImage.src = images[currentIndex]; // Cambiar la imagen
-            
-            // Hacer que el título aparezca después de cambiar la imagen
-            carouselTitle.style.opacity = 1; // Hacer que el título aparezca
             carouselImage.classList.add('active'); // Añadir la clase activa para el fade in
         }, 800); // El mismo tiempo que la transición en CSS
     }
@@ -34,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Evento para retroceder a la imagen anterior
     document.getElementById('prev').addEventListener('click', function() {
-        const prevIndex = (currentIndex - 1 + images.length) % images.length; // Retroceder al índice anterior
+        const prevIndex = (currentIndex - 1 + images.length) % images.length; 
         updateImage(prevIndex);
     });
 
@@ -42,8 +36,14 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         carouselImage.src = images[currentIndex];
         carouselImage.classList.add('active');
-        carouselTitle.style.opacity = 1; // Hacer que el título aparezca desde el inicio
     }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
+
+
+    /*Pasar automaticamente imagenes cada 5 segundos*/
+setInterval(function() {
+    const nextIndex = (currentIndex + 1) % images.length;
+    updateImage(nextIndex);
+}, 5000);   
 });
 /*SLIDER NAV*/ 
 

@@ -45,7 +45,14 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselImage.classList.add('active');
         carouselTitle.style.opacity = 1; // Hacer que el título aparezca desde el inicio
     }, 100); //
+
+    setInterval(function() {
+        const nextIndex = (currentIndex + 1) % images.length;
+        updateImage(nextIndex);
+    }, 5000); 
+
 });
+
 /*SLIDER NAV*/ 
 
 document.addEventListener('DOMContentLoaded', function() {

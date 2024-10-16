@@ -14,12 +14,11 @@ document.addEventListener('DOMContentLoaded', function() {
     let currentIndex = 0;
     const carouselImage = document.getElementById('carousel-image');
 
-    // Función para actualizar la imagen con efecto de desvanecimiento
+    // Función para actualizar imagen
     function updateImage(newIndex) {
-        // Remover la clase activa para iniciar el fade out
+        // Remover la clase activa 
         carouselImage.classList.remove('active');
 
-        // Esperar que la imagen se desvanezca antes de cambiar el src
         setTimeout(() => {
             currentIndex = newIndex;
             carouselImage.src = images[currentIndex]; // Cambiar la imagen
@@ -35,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Evento para retroceder a la imagen anterior
     document.getElementById('prev').addEventListener('click', function() {
-        const prevIndex = (currentIndex - 1 + images.length) % images.length; // Retroceder al índice anterior
+        const prevIndex = (currentIndex - 1 + images.length) % images.length; 
         updateImage(prevIndex);
     });
 
@@ -44,7 +43,18 @@ document.addEventListener('DOMContentLoaded', function() {
         carouselImage.src = images[currentIndex];
         carouselImage.classList.add('active');
     }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
+
+
+    /*Pasar automaticamente imagenes cada 3 segundos*/
+setInterval(function() {
+    const nextIndex = (currentIndex + 1) % images.length;
+    updateImage(nextIndex);
+}, 5000);   
 });
+
+
+ 
+
 
 
 /*SLIDER NAV*/ 
@@ -54,8 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const submenu = document.querySelector('.submenu');
 
     categoriasBtn.addEventListener('click', function(event) {
-        event.preventDefault(); // Evitar que el enlace recargue la página
-        submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
+        event.preventDefault(); // Evitar que el enlace recargue la pagina
+        submenu.classList.toggle('active'); // Mostrar/ocultar el submenu
     });
 });
 
