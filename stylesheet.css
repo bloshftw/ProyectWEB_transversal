@@ -197,6 +197,7 @@ margin: 10px 0px;
     width: 80%; 
     margin-left: auto; 
     margin-right: auto; 
+    margin-bottom: 30px;
 }
 
 .container_quienesSomos{
@@ -235,14 +236,49 @@ margin: 10px 0px;
 .container_quienesSomos .container_quienesSomos1 .imagen_enano {
     max-height: 600px;
     width: auto;
+    display: flex;
     align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+
 }
+
+/*HISTORIA*/
+
+/*FUENTES*/
+.container_quienesSomos_historia h2{
+font-family: 'Times New Roman', Times, serif;
+color: #333;
+font-size: 2.5rem;
+text-align: center;
+padding: 20px 0px;
+}
+
+.container_quienesSomos_historia p {
+    font-family: 'Times New Roman', Times, serif;
+    color: #666;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.container_quienesSomos_historia{
+    height: 300px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 35px 20px;
+
+}
+
 
 /*TEXTO*/
 
 .container_quienesSomos1_texto {
     flex: 1;
-    padding-left: 20px;
 }
 
 .container_quienesSomos1_texto h2{
@@ -256,6 +292,8 @@ margin: 10px 0px;
     line-height: 1.6;
     color: #666;
 }
+
+
 
 /* DONDE ESTAMOS SECCION INICIO*/
     .container_dondeEstamos{
