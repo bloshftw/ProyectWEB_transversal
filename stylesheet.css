@@ -216,7 +216,6 @@ margin: 10px 0px;
 
 .container_quienesSomos1_img{
     flex: 1;
-    padding-right: 20px;
 }
 
 .container_quienesSomos1_texto h2{
@@ -232,16 +231,11 @@ margin: 10px 0px;
     border-radius: 8px;
     margin-left: 20px;
 }
-
-.container_quienesSomos .container_quienesSomos1 .imagen_enano {
-    max-height: 600px;
-    width: auto;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    
-
+@media (max-width: 768px){
+    .container_quienesSomos1_img img{
+        margin: 0px;
+        padding-right: 0px;
+    }
 }
 
 /*HISTORIA*/
