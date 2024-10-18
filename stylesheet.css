@@ -266,12 +266,12 @@ padding: 20px 0px;
 
 .container_quienesSomos_historia{
     height: 300px;
-    width: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 35px 20px;
+    padding: 50px 15%;
 
 }
 
@@ -419,7 +419,7 @@ padding: 20px 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 550px;
         margin: 0;
     }
     .form-container{
