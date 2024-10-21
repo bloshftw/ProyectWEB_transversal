@@ -7,12 +7,13 @@
 /*-------------------------------------------------------------*/
 
 /* CARRUSEL */
+/* CARRUSEL */
 .container_carrusel {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 1000px;
+    height: 1000px; /* Altura fija para el contenedor */
     width: 100%;
     background-color: #f0f0f0;
     overflow: hidden;
@@ -21,7 +22,7 @@
 .carousel-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Asegura que las imágenes se ajusten bien dentro del contenedor */
     position: absolute;
     top: 0;
     left: 0;
@@ -31,15 +32,11 @@
 
 .carousel-img.active {
     opacity: 1;
-    position: relative;
+    z-index: 1; /* Prioriza la imagen activa */
 }
 
-.carousel-img.prev {
-    transform: translateX(-100%); /* Imagen anterior se desliza a la izquierda */
-}
-
-.carousel-img.next {
-    transform: translateX(100%); /* Imagen siguiente se desliza a la derecha */
+.carousel-img.prev, .carousel-img.next {
+    opacity: 0; /* Las imágenes previas o siguientes no deberían ser visibles */
 }
 
 .carousel-btn {
