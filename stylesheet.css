@@ -4,9 +4,19 @@
     box-sizing: border-box;
 }
 
+/* Fuentes */
+:root {
+    --fuente-Trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fuente-NewRoman: 'Times New Roman', Times, serif;
+    --fuente-Arial: Arial, sans-serif;
+    --Colorf0: #f0f0f0;
+    --Color-Fondo: #f9f9f9;
+    --Color-Titulo: #333;
+    --Color-Texto: #666;
+  }
 /*-------------------------------------------------------------*/
 
-/* CARRUSEL */
+
 /* CARRUSEL */
 .container_carrusel {
     display: flex;
@@ -15,7 +25,7 @@
     position: relative;
     height: 1000px; 
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: var(--Colorf0);
     overflow: hidden;
 }
 
@@ -48,7 +58,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: var(--Colorf0);
 }
 
 #prev {
@@ -85,9 +95,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--Colorf0);
     text-decoration: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:var(--fuente-Trebuchet);
     font-size: 150%;
     transition: color 0.3s;
 }
@@ -117,11 +127,11 @@ html {
 }
 
 .submenu li {
-margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 .submenu li a {
-    color: white;
+    color: var(--Colorf0);
     text-decoration: none;
     font-size: 16px;
 }
@@ -153,7 +163,7 @@ margin: 10px 0px;
 }
 
 .container_redes ul li a {
-    color: white;
+    color: var(--Colorf0);
     font-size: 150%;
     transition: color 0.3s;
 }
@@ -178,7 +188,7 @@ margin: 10px 0px;
 
 .title_nosotros h3{
     font-size: 3rem;
-    color: #333;
+    color: var(--Color-Titulo);
 }
 
 /*TITULO NOSOTROS FIN*/
@@ -190,7 +200,7 @@ margin: 10px 0px;
     
     border: 0;
     height: 2px;
-    background-color: #333; 
+    background-color: var(--Color-Titulo);
     width: 80%; 
     margin-left: auto; 
     margin-right: auto; 
@@ -199,7 +209,7 @@ margin: 10px 0px;
 
 .container_quienesSomos{
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: var(--Color-Fondo);
 }
 
 .container_quienesSomos1{
@@ -239,19 +249,18 @@ margin: 10px 0px;
 
 /*FUENTES*/
 .container_quienesSomos_historia h2{
-    font-family: 'Times New Roman', Times, serif;
-    color: #333;
+    font-family: var(--fuente-NewRoman);
+    color: var(--Color-Titulo);
     font-size: 2.5rem;
     text-align: center;
     padding: 3%;
 }
 
 .container_quienesSomos_historia p {
-    font-family: 'Times New Roman', Times, serif;
-    color: #666;
+    font-family: var(--fuente-NewRoman);
+    color: var(--Color-Texto);
     font-size: 1.2rem;
     text-align: center;
-
     line-height: 1.6;
 }
 
@@ -291,13 +300,13 @@ margin: 10px 0px;
     font-size: 2.5rem;
     margin-bottom: 20px;
     margin: 5%;
-    color: #333;
+    color: var(--Color-Titulo);
 }
 
 .container_quienesSomos1_texto p{
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #666;
+    color: var(--Color-Texto);
     margin: 5%;
 }
 
@@ -306,14 +315,14 @@ margin: 10px 0px;
 /* DONDE ESTAMOS SECCION INICIO*/
     .container_dondeEstamos{
         padding: 0px 0px;
-        background-color: #f9f9f9;
+        background-color: var(--Color-Fondo);
         text-align: center;
         margin-bottom: 40px;
     }
 
     .container_donde_encontrarnos_title {
         margin-bottom: 0px;
-        color: #333;
+        color:var(--Color-Titulo);
         height: 100px;
         display: flex;
         justify-content: center;
@@ -324,12 +333,12 @@ margin: 10px 0px;
 
     .container_dondeEstamos .container_donde_encontrarnos_title h3 {
         font-size: 3rem;
-        color: #333;
+        color: var(--Color-Titulo);
     }
 
     .container_dondeEstamos p{
         font-size: 1.5rem;
-        color: #666;
+        color:var(--Color-Texto);
     }
 
     .container_dondeEstamos_ubicacion{
@@ -381,14 +390,14 @@ margin: 10px 0px;
     .container_canalDifusion{
         text-align: center;
         padding: 50px 0px;
-        background-color: #f0f0f0;
+        background-color: var(--Colorf0);
         margin-top: 40px;
 
     }
 
     .container_canalDifusion h3 {
         font-size: 3rem;
-        color: #333;
+        color: var(--Color-Titulo);
         margin-bottom: 20px;
     }
 
@@ -416,14 +425,14 @@ margin: 10px 0px;
 /* Título del formulario */
     h6 {
         font-size: 2.2rem;
-        color: #333;
+        color: var(--Color-Titulo);
         margin-bottom: 20px;
     }
 
 /* Estilos para el formulario */
     .form {
-        font-family: Arial, sans-serif;
-        background-color: #f9f9f9;
+        font-family: var(--fuente-Arial);
+        background-color: var(--Color-Fondo);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -431,7 +440,7 @@ margin: 10px 0px;
         margin: 0;
     }
     .form-container{
-        background-color: white;
+        background-color: var(--Colorf0);
         padding: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -456,7 +465,7 @@ margin: 10px 0px;
     button {
         padding: 10px 20px;
         background-color: #4CAF50;
-        color: white;
+        color: var(--Colorf0);
         border: none;
         border-radius: 5px;
         cursor: pointer;
@@ -534,9 +543,9 @@ margin: 10px 0px;
 
 .footer-content{
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:var(--fuente-Trebuchet);
     font-size: 22px;
-    color: white;
+    color: var(--Colorf0);
     background-color:  rgba(0, 0, 0, 0.85);
     padding: 1.5rem; 
     text-align: center;

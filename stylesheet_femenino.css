@@ -4,7 +4,17 @@
     box-sizing: border-box;
     ;
 }
-
+/* Fuentes */
+:root {
+    --fuente-Trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fuente-NewRoman: 'Times New Roman', Times, serif;
+    --fuente-Arial: Arial, sans-serif;
+    --Colorf0: #f0f0f0;
+    --Color-Fondo: #f9f9f9;
+    --Color-Titulo: #333;
+    --Color-Texto: #666;
+    --Color-DescripcionT: #a5a5a5;
+  }
 /*-------------------------------------------------------------*/
 
 /* CARRUSEL */
@@ -14,7 +24,7 @@
     top: 50%; /* Centrado verticalmente */
     left: 50%; /* Centrado horizontalmente */
     transform: translate(-50%, -50%);
-    color: white;
+    color: var(--Colorf0);
     font-size: 3rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
@@ -84,7 +94,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: var(--Colorf0);
 }
 
 #prev {
@@ -103,7 +113,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
@@ -111,7 +121,7 @@
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 8%;
     position: relative;
 }
 
@@ -121,10 +131,10 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--Colorf0);
     text-decoration: none;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-family:var(--fuente-Trebuchet);
+    font-size: 150%;
     transition: color 0.3s;
 }
 
@@ -154,14 +164,14 @@ html {
 }
 
 .submenu li {
-margin: 10px 0px;
+    margin: 10px 0px;
 }
 
 
 .submenu li a {
-    color: white;
+    color: var(--Colorf0);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 150%;
 }
 
 .submenu.active {
@@ -191,8 +201,8 @@ margin: 10px 0px;
 }
 
 .container_redes ul li a {
-    color: white;
-    font-size: 20px;
+    color: var(--Colorf0);
+    font-size: 150%;
     transition: color 0.3s;
 }
 
@@ -210,7 +220,7 @@ margin: 10px 0px;
 /*TITULO*/
 .container_planteles_title{
     height: 20vh;
-    color: white;
+    color: var(--Colorf0);
     background-color:  rgba(0, 0, 0, 0.87);
     display: flex;
     text-align: center;
@@ -225,20 +235,20 @@ margin: 10px 0px;
     left: 10%; 
     right: 10%; 
     height: 2px;
-    background-color: white; 
+    background-color: var(--Color-Fondo);
     
   }
 
 .container_planteles_title h2 {
     font-size: 3.7rem;
-    color: #a5a5a5;   
+    color: var(--Color-DescripcionT); 
 
 }
 
 .container_planteles_jugadores {
 
     height: 2200px;
-    background-color: white;
+    background-color:var(--Color-Fondo);
     background-color:  rgba(0, 0, 0, 0.85);
     width: 100%;
     display: flex;
@@ -249,7 +259,7 @@ margin: 10px 0px;
 .container_planteles_jugadores2 {
 
     height: 1760px;
-    background-color: white;
+    background-color:var(--Color-Fondo);
     background-color:  rgba(0, 0, 0, 0.85);
     width: 100%;
     display: flex;
@@ -261,7 +271,7 @@ margin: 10px 0px;
 .container_planteles_jugadores3 {
 
     height: 2180px;
-    background-color: white;
+    background-color: var(--Color-Fondo);
     background-color:  rgba(0, 0, 0, 0.85);
     width: 100%;
     display: flex;
@@ -272,7 +282,7 @@ margin: 10px 0px;
 .container_planteles_jugadores4 {
 
     height: 1330px;
-    background-color: white;
+    background-color: var(--Color-Fondo);
     background-color:  rgba(0, 0, 0, 0.85);
     width: 100%;
     display: flex;
@@ -297,7 +307,7 @@ margin: 10px 0px;
 }
 
 .tarjeta{
-    background-color: white;
+    background-color: var(--Color-Fondo);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 2);
     overflow: hidden;
@@ -321,7 +331,7 @@ margin: 10px 0px;
     bottom: 0;
     width: 100%;
     padding: 10px;
-    color: white;
+    color: var(--Colorf0);
     font-size: 1rem;
     background: linear-gradient(to top, rgba(0, 0, 0, 5), transparent);
     text-align: center;
@@ -334,7 +344,7 @@ margin: 10px 0px;
 
 .descripcion p{
     font-size: 1.3rem;
-    color: #a5a5a5;
+    color: var(--Color-DescripcionT);
 }
 
 /*fin-----------PLANTELES Femeninos-------------------------------------*/
@@ -377,9 +387,9 @@ margin: 10px 0px;
 
 .footer-content{
     display: flex;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:var(--fuente-Trebuchet);
     font-size: 22px;
-    color: white;
+    color: var(--Colorf0);
     background-color:  rgba(0, 0, 0, 0.85);
     padding: 1.5rem; 
     text-align: center;
@@ -423,6 +433,19 @@ margin: 10px 0px;
     .footer-content p{
         font-size: 17px;
     }
-
+    nav ul li a{
+        font-size: 70%;
+    }
+    .container_redes ul li a{
+        font-size: 70%;
+    }
+    @media (max-width: 400px) {
+        nav ul li a{
+            font-size: 50%;
+        }
+        .container_redes ul li a{
+            font-size: 50%;
+        }
+    }
 }
 /*Fin----------Footer----------*/
