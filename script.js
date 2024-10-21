@@ -50,11 +50,6 @@ setInterval(function() {
 }, 9000);   
 });
 
-
- 
-
-
-
 /*SLIDER NAV*/ 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -66,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         submenu.classList.toggle('active'); // Mostrar/ocultar el submenu
     });
 });
-
 
 
 /*FORMULARIO INICIO*/
