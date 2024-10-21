@@ -70,7 +70,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 1%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
@@ -78,7 +78,7 @@
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 8%;
     position: relative;
 }
 
@@ -91,7 +91,7 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 150%;
     transition: color 0.3s;
 }
 
@@ -157,7 +157,7 @@ margin: 10px 0px;
 
 .container_redes ul li a {
     color: white;
-    font-size: 20px;
+    font-size: 150%;
     transition: color 0.3s;
 }
 
@@ -359,6 +359,21 @@ margin: 10px 0px;
 
         .container_dondeEstamos_ubicacion img {
             max-width: 100%; 
+        }
+
+        nav ul li a{
+            font-size: 70%;
+        }
+        .container_redes ul li a{
+            font-size: 70%;
+        }
+    }
+    @media (max-width: 400px) {
+        nav ul li a{
+            font-size: 50%;
+        }
+        .container_redes ul li a{
+            font-size: 50%;
         }
     }
 

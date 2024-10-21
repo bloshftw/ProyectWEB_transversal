@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 setInterval(function() {
     const nextIndex = (currentIndex + 1) % images.length;
     updateImage(nextIndex);
-}, 5000);   
+}, 9000);   
 });
 
 
