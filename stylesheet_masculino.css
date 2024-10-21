@@ -22,18 +22,17 @@
 .carousel-title{
 
     position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    left: 50%; /* Centrado horizontalmente */
+    top: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     color: var(--Colorf0);
     font-size: 3rem;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
-    opacity: 0; /* Oculto inicialmente */
-    transition: opacity 1s ease-in-out; /* Transición suave de opacidad */
-    z-index: 2; /* Asegúrate de que el título esté por encima de las imágenes */
-
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+    z-index: 2; 
 }
 
 .container_carrusel {
@@ -41,29 +40,43 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 814px;
     width: 100%;
     background-color:  rgba(0, 0, 0, 0.85);
     overflow: hidden;
 }
-
+@media(max-width: 1080px){
+    .container_carrusel{
+        height: 400px;
+    }
+}
+@media(max-width: 600px){
+    .container_carrusel{
+        height: 300px;
+    }
+}
+@media(max-width: 500px){
+    .container_carrusel{
+        height: 200px;
+    }
+}
 .carousel-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; 
-    transform: translateY(0);
+    transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  
     filter: brightness(0.5);
     z-index: 1;
 }
 
 .carousel-img.active {
     opacity: 1;
-    position: relative;
+    position: absolute;
     transform: translateY(0);
 }
 
@@ -96,7 +109,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: white;
+    color: var(--Colorf0);
     z-index: 10;
 }
 
