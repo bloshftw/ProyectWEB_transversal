@@ -21,8 +21,8 @@
 .carousel-title{
 
     position: absolute;
-    top: 50%; /* Centrado verticalmente */
-    left: 50%; /* Centrado horizontalmente */
+    top: 50%; 
+    left: 50%;
     transform: translate(-50%, -50%);
     color: var(--Colorf0);
     font-size: 3rem;
@@ -40,10 +40,25 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 814px;
     width: 100%;
     background-color:  rgba(0, 0, 0, 0.85);
     overflow: hidden;
+}
+@media(max-width: 1080px){
+    .container_carrusel{
+        height: 400px;
+    }
+}
+@media(max-width: 600px){
+    .container_carrusel{
+        height: 300px;
+    }
+}
+@media(max-width: 500px){
+    .container_carrusel{
+        height: 200px;
+    }
 }
 
 .carousel-img {
@@ -57,6 +72,7 @@
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
     transform: translateY(0); 
     filter: brightness(0.5);
+    z-index: 1;
 }
 
 .carousel-img.active {
@@ -95,6 +111,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--Colorf0);
+    z-index: 10;
 }
 
 #prev {
@@ -228,16 +245,6 @@ html {
     align-items: center;
 }
 
-.container_planteles_title::after {
-    content: "";
-    position: absolute;
-    bottom: 30px; 
-    left: 10%; 
-    right: 10%; 
-    height: 2px;
-    background-color: var(--Color-Fondo);
-    
-  }
 
 .container_planteles_title h2 {
     font-size: 3.7rem;
@@ -352,10 +359,6 @@ html {
 @media (max-width: 425px) {
     .carousel-title{
         font-size: 1.2rem;
-    }
-    .container_planteles_title::after{
-        bottom:0%;
-        height: 0px;
     }
     .container_carrusel{
         width: 100%;

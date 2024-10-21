@@ -58,6 +58,7 @@
     transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out; 
     transform: translateY(0);
     filter: brightness(0.5);
+    z-index: 1;
 }
 
 .carousel-img.active {
@@ -96,6 +97,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: white;
+    z-index: 10;
 }
 
 #prev {
@@ -225,19 +227,7 @@ html {
     text-align: center;
     justify-content: center;
     align-items: center;
-  
 }
-
-.container_planteles_title::after {
-    content: "";
-    position: absolute;
-    bottom: 30px; 
-    left: 10%; 
-    right: 10%; 
-    height: 2px; 
-    background-color: var(--Colorf0);
-    
-  }
 
 .container_planteles_title h2 {
     font-size: 5rem;
@@ -336,11 +326,6 @@ html {
     } 
     .container_planteles_title h2{
         font-size: 3rem;
-    }
-    .container_planteles_title::after{
-        bottom:0%;
-        height: 0px;
-    
     }
     .container_planteles_jugadores{
         height: 5100px;
