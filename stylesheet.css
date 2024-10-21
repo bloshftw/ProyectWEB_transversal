@@ -13,7 +13,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 1000px; /* Altura fija para el contenedor */
+    height: 1000px; 
     width: 100%;
     background-color: #f0f0f0;
     overflow: hidden;
@@ -22,7 +22,7 @@
 .carousel-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Asegura que las imágenes se ajusten bien dentro del contenedor */
+    object-fit: cover; 
     position: absolute;
     top: 0;
     left: 0;
@@ -32,11 +32,11 @@
 
 .carousel-img.active {
     opacity: 1;
-    z-index: 1; /* Prioriza la imagen activa */
+    z-index: 1; 
 }
 
 .carousel-img.prev, .carousel-img.next {
-    opacity: 0; /* Las imágenes previas o siguientes no deberían ser visibles */
+    opacity: 0; 
 }
 
 .carousel-btn {
