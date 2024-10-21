@@ -16,36 +16,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Función para actualizar imagen
     function updateImage(newIndex) {
-        // Remover la clase activa 
         carouselImage.classList.remove('active');
 
         setTimeout(() => {
             currentIndex = newIndex;
-            carouselImage.src = images[currentIndex]; // Cambiar la imagen
-            carouselImage.classList.add('active'); // Añadir la clase activa para el fade in
+            carouselImage.src = images[currentIndex]; 
+            carouselImage.classList.add('active'); 
         }, 800); // El mismo tiempo que la transición en CSS
     }
 
-    // Evento para avanzar a la siguiente imagen
+  
     document.getElementById('next').addEventListener('click', function() {
         const nextIndex = (currentIndex + 1) % images.length; // Avanzar al siguiente índice
         updateImage(nextIndex);
     });
 
-    // Evento para retroceder a la imagen anterior
+
     document.getElementById('prev').addEventListener('click', function() {
         const prevIndex = (currentIndex - 1 + images.length) % images.length; 
         updateImage(prevIndex);
     });
 
-    // Cargar la primera imagen con un pequeño retraso para que tenga efecto de fade in
+
     setTimeout(() => {
         carouselImage.src = images[currentIndex];
         carouselImage.classList.add('active');
-    }, 100); // Retraso pequeño para que la primera imagen se muestre correctamente
+    }, 100); 
 
 
-    /*Pasar automaticamente imagenes cada 3 segundos*/
 setInterval(function() {
     const nextIndex = (currentIndex + 1) % images.length;
     updateImage(nextIndex);
