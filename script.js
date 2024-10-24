@@ -1,14 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
         './assets/imagenes-carrusel/2.jpg',
+        './assets/imagenes-carrusel/1.jpg',
         './assets/imagenes-carrusel/3.jpg',
         './assets/imagenes-carrusel/6.jpg',
         './assets/imagenes-carrusel/8.jpg',
         './assets/imagenes-carrusel/11.jpg',
         './assets/imagenes-carrusel/12.jpg',
-        './assets/Mini-voley/7.JPG',
-        './assets/Mini-voley/27.JPG',
-        './assets/Mini-voley/105.JPG'
+        './assets/imagenes-carrusel/105.jpg'
     ];
 
     let currentIndex = 0;
@@ -27,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   
     document.getElementById('next').addEventListener('click', function() {
-        const nextIndex = (currentIndex + 1) % images.length; // Avanzar al siguiente índice
+        const nextIndex = (currentIndex + 1) % images.length; 
         updateImage(nextIndex);
     });
 
@@ -64,25 +63,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 /*FORMULARIO INICIO*/
-// Función de validación
+// Validar
 document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevenir el envío del formulario
+    event.preventDefault(); // Previene el envo del form
     let hasError = false;
 
-    // Limpieza de mensajes anteriores
+    // clean text
     document.getElementById('nameError').textContent = '';
     document.getElementById('emailError').textContent = '';
     document.getElementById('phoneError').textContent = '';
     document.getElementById('messageError').textContent = '';
 
-    // Validación del nombre
+    // Validar nombre
     const name = document.getElementById('name').value.trim();
     if (name === '') {
         document.getElementById('nameError').textContent = 'El nombre es obligatorio.';
         hasError = true;
     }
 
-    // Validación del email usando expresión regular
+    // validacion email
     const email = document.getElementById('email').value.trim();
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     if (!emailRegex.test(email)) {
@@ -105,11 +104,11 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         hasError = true;
     }
 
-    // Si no hay errores, mostrar los datos enviados
+    
     if (!hasError) {
-        // Crear elementos HTML para mostrar los datos enviados
+        // crea elementos para mostrar
         const successMessage = document.getElementById('successMessage');
-        successMessage.textContent = ''; // Limpiar mensajes anteriores
+        successMessage.textContent = ''; // clean
 
         const nameElement = document.createElement('p');
         nameElement.textContent = `Nombre: ${name}`;
