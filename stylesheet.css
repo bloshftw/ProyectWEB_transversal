@@ -238,7 +238,7 @@ html {
 .container_quienesSomos1_img img{
     width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-left: 20px;
 }
 @media (max-width: 768px){
@@ -255,6 +255,8 @@ html {
         order: 1;
     }
 }
+
+
     
 
 
@@ -448,12 +450,14 @@ html {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 550px;
+        height: auto;
         margin: 0;
     }
     .form-container{
         background-color: var(--Colorf0);
         padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 400px;
