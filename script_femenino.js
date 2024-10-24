@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateImage(prevIndex);
     });
 
-    // Cargar la primera imagen con un pequeño retraso para que tenga efecto
+
     setTimeout(() => {
         carouselImage.src = images[currentIndex];
         carouselImage.classList.add('active');
-        carouselTitle.style.opacity = 1; // Hacer que el título aparezca desde el inicio
+        carouselTitle.style.opacity = 1;
     }, 100); //
 
     setInterval(function() {
@@ -61,6 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     categoriasBtn.addEventListener('click', function(event) {
         event.preventDefault(); //
-        submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
+        submenu.classList.toggle('active'); 
     });
 });
