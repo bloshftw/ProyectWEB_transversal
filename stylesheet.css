@@ -247,6 +247,16 @@ html {
         padding-right: 0px;
     }
 }
+@media (max-width: 768px){
+    #imagenCambiar{
+        order: 2;
+    }
+    #textoCambiar{
+        order: 1;
+    }
+}
+    
+
 
 /*HISTORIA*/
 
@@ -511,7 +521,7 @@ html {
             flex-direction: column;
         }
         .container_quienesSomos1_img img{
-            border-radius: 100px;
+            border-radius: 50px;
         }
         .container_quienesSomos .container_quienesSomos1 .imagen_enano {
             width: 100%;
