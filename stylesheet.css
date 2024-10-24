@@ -100,7 +100,7 @@ nav ul li {
 nav ul li a {
     color: var(--Colorf0);
     text-decoration: none;
-    font-family:var(--fuente-Trebuchet);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150%;
     transition: color 0.3s;
 }
@@ -291,7 +291,6 @@ html {
     margin-top: 60px;
     
 }
-
 
 /*TEXTO*/
 
@@ -491,70 +490,70 @@ html {
 
 /*SECCION CONTACTO FORMULARIO FINAL*/
 /*-----------------Responsive------------------*/
-@media (max-width: 768px){
-    .indexTotal{
-      display: flex;
-      flex-direction:column;
-      overflow: hidden;
-      align-items: center;
-
-    }
-    .container_carrusel{
-        width: 100%;
-        height: 510px;
-    }
-    .container_quienesSomos{
-        padding: 30px;
-        
-    }
-    .container_quienesSomos1{
+    @media (max-width: 768px){
+        .indexTotal{
         display: flex;
-        flex-direction: column;
-    }
-    .container_quienesSomos1_img img{
-        border-radius: 100px;
-    }
-    .container_quienesSomos .container_quienesSomos1 .imagen_enano {
-        width: 100%;
-        height: auto;
+        flex-direction:column;
+        overflow: hidden;
         align-items: center;
-        border-radius: 20%;
-        padding: 0%;
-    }
-    .container_quienesSomos1_texto {
-        margin-top: 10px;
-        text-align: center;
-        padding: 0;
-    }
-    .info{
-        flex-direction: column;
-    }
-    .footer-content .Logo{
-        height: auto;
-        width:17%;
-        margin: 10px;
-    
-    }
-    .footer-content p{
-        font-size: 17px;
-    }
 
-}
-@media(max-width: 1080px){
-    .container_carrusel{
-        height: 400px;
+        }
+        .container_carrusel{
+            width: 100%;
+            height: 510px;
+        }
+        .container_quienesSomos{
+            padding: 30px;
+            
+        }
+        .container_quienesSomos1{
+            display: flex;
+            flex-direction: column;
+        }
+        .container_quienesSomos1_img img{
+            border-radius: 100px;
+        }
+        .container_quienesSomos .container_quienesSomos1 .imagen_enano {
+            width: 100%;
+            height: auto;
+            align-items: center;
+            border-radius: 20%;
+            padding: 0%;
+        }
+        .container_quienesSomos1_texto {
+            margin-top: 10px;
+            text-align: center;
+            padding: 0;
+        }
+        .info{
+            flex-direction: column;
+        }
+        .footer-content .Logo{
+            height: auto;
+            width:17%;
+            margin: 10px;
+        
+        }
+        .footer-content p{
+            font-size: 17px;
+        }
+
     }
-}
-@media(max-width: 600px){
-    .container_carrusel{
-        height: 300px;
+    @media(max-width: 1080px){
+        .container_carrusel{
+            height: 400px;
+        }
     }
-}
-@media(max-width: 500px){
-    .container_carrusel{
-        height: 200px;
+    @media(max-width: 600px){
+        .container_carrusel{
+            height: 300px;
+        }
     }
-}
+    @media(max-width: 500px){
+        .container_carrusel{
+            height: 200px;
+        }
+    }
 
 /*-----------------Responsive------------------*/
 /*Inicio----------Footer-content---------*/
