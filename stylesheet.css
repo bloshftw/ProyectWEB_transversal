@@ -540,6 +540,21 @@ html {
     }
 
 }
+@media(max-width: 1080px){
+    .container_carrusel{
+        height: 400px;
+    }
+}
+@media(max-width: 600px){
+    .container_carrusel{
+        height: 300px;
+    }
+}
+@media(max-width: 500px){
+    .container_carrusel{
+        height: 200px;
+    }
+}
 
 /*-----------------Responsive------------------*/
 /*Inicio----------Footer-content---------*/
