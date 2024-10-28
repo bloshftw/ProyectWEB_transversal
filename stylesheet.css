@@ -15,7 +15,62 @@
     --Color-Texto: #666;
   }
 /*-------------------------------------------------------------*/
+/* Hamburguesa */
+.menu-hamburguesa {
+    display: none; /* Oculto por defecto */
+    font-size: 24px;
+    color: var(--Colorf0);
+    cursor: pointer;
+}
 
+nav {
+    position: relative; /* Cambia a relative para que el menú se posicione respecto a nav */
+}
+
+#nav-menu {
+    display: flex; /* Muestra el menú en pantallas grandes */
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+    }
+
+    #nav-menu {
+        display: none; /* Oculta el menú de navegación por defecto en pantallas pequeñas */
+        flex-direction: column; /* Cambia a columna */
+        position: absolute; /* Posiciona el menú en la parte superior */
+        top: 30px; /* Ajusta según sea necesario */
+        left: 0; /* Alínea a la izquierda */
+        width: auto; /* Cambia a auto para que ajuste al contenido */
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+        z-index: 2;
+        padding: 0; /* Elimina padding */
+        margin: 0; /* Elimina margen */
+    }
+
+    #nav-menu.show {
+        display: flex; /* Muestra el menú cuando está activado */
+    }
+
+    nav ul {
+        flex-direction: column; /* Cambia a columna */
+        padding: 0; /* Elimina padding */
+        margin: 0; /* Elimina margen */
+        list-style-type: none; /* Elimina viñetas */
+    }
+
+    nav ul li {
+        text-align: left; /* Alinea a la izquierda */
+        padding: 10px; /* Espaciado */
+        border-bottom: 0px; /* Un borde opcional entre las opciones */
+        margin: 0; /* Elimina margen */
+    }
+}
+
+
+/* Fin hamburguesa */
 
 /* CARRUSEL */
 .container_carrusel {

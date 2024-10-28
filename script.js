@@ -61,9 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+/* hamburguesa */
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const navMenu = document.getElementById('nav-menu');
 
-
-
+menuHamburguesa.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); // Alterna la clase "show"
+});
 
 /*FORMULARIO INICIO*/
 document.getElementById("contactForm").addEventListener("submit", function(event) {
