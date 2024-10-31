@@ -31,19 +31,19 @@ nav {
     display: flex; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .menu-hamburguesa {
         display: block; 
     }
 
     #nav-menu {
         display: none; 
-        flex-direction:column; /* Cambia a columna */
-        position: fixed; /* Posiciona el menú en la parte superior */
-        top: 42px; /* Ajusta según sea necesario */
-        left: 0; /* Alínea a la izquierda */
-        width: 100%; /* Cambia a auto para que ajuste al contenido */
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        flex-direction:column; 
+        position: absolute; 
+        top: 42px; 
+        left: 0; 
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.5); 
         z-index: 1000;
         padding: 0;
         margin: 0; 

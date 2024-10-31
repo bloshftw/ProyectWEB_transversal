@@ -33,19 +33,19 @@ nav {
     display: flex; 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .menu-hamburguesa {
         display: block; 
     }
 
     #nav-menu {
         display: none; 
-        flex-direction:column; /* Cambia a columna */
-        position: fixed; /* Posiciona el menú en la parte superior */
-        top: 42px; /* Ajusta según sea necesario */
-        left: 0; /* Alínea a la izquierda */
-        width: 100%; /* Cambia a auto para que ajuste al contenido */
-        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        flex-direction:column; 
+        position: absolute;
+        top: 42px; 
+        left: 0; 
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.5); 
         z-index: 1000;
         padding: 0;
         margin: 0; 
@@ -63,16 +63,16 @@ nav {
     }
 
     nav ul li {
-        text-align: left; /* Alinea a la izquierda */
-        padding: 10px; /* Espaciado */
-        border-bottom: 0px; /* Un borde opcional entre las opciones */
+        text-align: left;
+        padding: 10px; 
+        border-bottom: 0px;
         margin: 0; 
         z-index: 9999;
     }
 }
 @media (max-width: 426px){
     #nav-menu {
-        top: 36px; /* Ajusta según sea necesario */
+        top: 36px; 
     }
 }
 @media (max-width: 377px){
@@ -254,7 +254,7 @@ html {
 .submenu li a {
     color: var(--Colorf0);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 150%;
 }
 
 .submenu.active {
@@ -462,7 +462,7 @@ html {
     width: 70%;
     background-color: #ccc;
 }
-@media (max-width: 768px){
+@media (max-width: 769px){
     .info{
         flex-direction: column;
     }
