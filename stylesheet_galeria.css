@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+
+/* Fuentes */
+:root {
+    --fuente-Trebuchet: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --fuente-NewRoman: 'Times New Roman', Times, serif;
+    --fuente-Arial: Arial, sans-serif;
+    --Colorf0: #f0f0f0;
+    --Color-Fondo: #f9f9f9;
+    --Color-Titulo: #333;
+    --Color-Texto: #666;
+  }
+/*-------------------------------------------------------------*/
+/* Hamburguesa */
+.menu-hamburguesa {
+    display: none; 
+    font-size: 24px;
+    color: var(--Colorf0);
+    cursor: pointer;
+}
+
+nav {
+    position: relative; 
+}
+
+#nav-menu {
+    display: flex; 
+}
+
+@media (max-width: 769px) {
+    .menu-hamburguesa {
+        display: block; 
+    }
+
+    #nav-menu {
+        display: none; 
+        flex-direction:column; 
+        position: absolute; 
+        top: 42px; 
+        left: 0; 
+        width: 100%; 
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 1000;
+        padding: 0;
+        margin: 0; 
+    }
+
+    #nav-menu.show {
+        display: flex; 
+    }
+
+    nav ul {
+        flex-direction:row; 
+        padding: 0; 
+        margin: 0; 
+        list-style-type: none; 
+    }
+
+    nav ul li {
+        text-align: left; /* Alinea a la izquierda */
+        padding: 10px; /* Espaciado */
+        border-bottom: 0px; /* Un borde opcional entre las opciones */
+        margin: 0; 
+        z-index: 9999;
+    }
+}
+@media (max-width: 426px){
+    #nav-menu {
+        top: 36px; /* Ajusta según sea necesario */
+    }
+}
+@media (max-width: 377px){
+    #nav-menu {
+        top: 34px; /* Ajusta según sea necesario */
+    }
+}
+@media (max-width: 321px){
+    #nav-menu {
+        top: 33px; /* Ajusta según sea necesario */
+    }
+}
+/* Fin hamburguesa */
+
+/*HEADER CARRUSEL*/
+.container_carrusel_header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 8%;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    color: var(--Colorf0);
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f0a500;
+}
+
+/*EFECTO SUAVE "CONTACTOS"*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/*SLIDER CATEGORIAS*/
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+}
+
+.submenu li {
+    margin: 10px 0px;
+}
+
+.submenu li a {
+    color: var(--Colorf0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.submenu.active {
+    display: block;
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Redes sociales */
+.container_redes ul {
+    display: flex;
+    list-style: none;
+}
+
+.container_redes ul li {
+    padding: 0 10px;
+}
+
+.container_redes ul li a {
+    color: var(--Colorf0);
+    font-size: 150%;
+    transition: color 0.3s;
+}
+
+.container_redes ul li a:hover {
+    color: #f0a500;
+}
+
+/*-------------------------------------------------------------*/
+
+
+img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5px;
+    border-radius: 1%;
+}
+
+@media (max-width: 769px) {
+    .column{
+        flex: 60%;
+    }
+}
+@media (max-width: 436px) {
+    .column{
+        flex: 80%;
+    }
+}
+@media (max-width: 321px) {
+    .column{
+        flex: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Inicio----------Footer-content---------*/
+
+.footer-content{
+    display: flex;
+    font-family:var(--fuente-Trebuchet);
+    font-size: 22px;
+    color: var(--Colorf0);
+    background-color:  rgba(0, 0, 0, 0.85);
+    padding: 1.5rem; 
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.info{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content div{
+    margin-bottom: 20px;
+}
+
+.footer-content .Logo{
+    align-items: center;
+    height: auto;
+    width:30%;
+    margin: 10px;
+
+}
+
+.separador {
+    height: 2px;
+    width: 70%;
+    background-color: #ccc;
+}
+/*Fin----------Footer----------*/
