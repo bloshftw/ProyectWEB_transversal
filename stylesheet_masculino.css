@@ -17,7 +17,75 @@
     --Color-DescripcionT: #a5a5a5;
   }
 /*-------------------------------------------------------------*/
+/* Hamburguesa */
+.menu-hamburguesa {
+    display: none; 
+    font-size: 24px;
+    color: var(--Colorf0);
+    cursor: pointer;
+}
 
+nav {
+    position: relative; 
+}
+
+#nav-menu {
+    display: flex; 
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguesa {
+        display: block; 
+    }
+
+    #nav-menu {
+        display: none; 
+        flex-direction:column; /* Cambia a columna */
+        position: fixed; /* Posiciona el menú en la parte superior */
+        top: 42px; /* Ajusta según sea necesario */
+        left: 0; /* Alínea a la izquierda */
+        width: 100%; /* Cambia a auto para que ajuste al contenido */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        z-index: 1000;
+        padding: 0;
+        margin: 0; 
+    }
+
+    #nav-menu.show {
+        display: flex; 
+    }
+
+    nav ul {
+        flex-direction:row; 
+        padding: 0; 
+        margin: 0; 
+        list-style-type: none; 
+    }
+
+    nav ul li {
+        text-align: left; /* Alinea a la izquierda */
+        padding: 10px; /* Espaciado */
+        border-bottom: 0px; /* Un borde opcional entre las opciones */
+        margin: 0; 
+        z-index: 9999;
+    }
+}
+@media (max-width: 426px){
+    #nav-menu {
+        top: 36px; /* Ajusta según sea necesario */
+    }
+}
+@media (max-width: 377px){
+    #nav-menu {
+        top: 34px; 
+    }
+}
+@media (max-width: 321px){
+    #nav-menu {
+        top: 33px;
+    }
+}
+/* Fin hamburguesa */
 /* CARRUSEL */
 .carousel-title{
 
@@ -330,7 +398,7 @@ html {
 
 /*------------Responsive------------*/
 
-    @media (max-width: 425px) {
+    @media (max-width: 426px) {
         .carousel-title{
             font-size: 1.2rem;
         }
@@ -351,6 +419,7 @@ html {
             display: flex;
             flex-direction: column;
         }
+
     }
 /*------------Responsive------------*/
 
@@ -410,7 +479,17 @@ html {
         font-size: 70%;
     }
     .container_redes ul li a{
-        font-size: 70%;
+        font-size: 90%;
+    }
+    ul.submenu.active{
+        padding: 3px;
+        z-index: 9999;
+    }
+    ul.submenu li{
+        font-size: 5px;
+        margin: 5px;
+        padding: 5px;
+        z-index: 9999;
     }
 
 }
@@ -419,7 +498,15 @@ html {
         font-size: 50%;
     }
     .container_redes ul li a{
-        font-size: 50%;
+        font-size: 70%;
+    }
+    ul.submenu.active{
+        padding: 2px;
+    }
+    ul.submenu li{
+        font-size: 4px;
+        margin: 4px;
+        padding: 4px;
     }
 }
 

@@ -63,3 +63,11 @@ document.addEventListener('DOMContentLoaded', function() {
         submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
     });
 });
+
+/* hamburguesa */
+const menuHamburguesa = document.querySelector('.menu-hamburguesa');
+const navMenu = document.getElementById('nav-menu');
+
+menuHamburguesa.addEventListener('click', () => {
+    navMenu.classList.toggle('show'); // Alterna la clase "show"
+});

@@ -78,6 +78,11 @@ nav {
         top: 34px; /* Ajusta según sea necesario */
     }
 }
+@media (max-width: 321px){
+    #nav-menu {
+        top: 33px; /* Ajusta según sea necesario */
+    }
+}
 /* Fin hamburguesa */
 
 /* CARRUSEL */
@@ -448,15 +453,32 @@ html {
             font-size: 70%;
         }
         .container_redes ul li a{
-            font-size: 70%;
+            font-size: 90%;
         }
+        ul.submenu.active{
+            padding: 3px;
+        }
+        ul.submenu li{
+            font-size: 5px;
+            margin: 5px;
+            padding: 5px;
+        }
+
     }
     @media (max-width: 400px) {
         nav ul li a{
             font-size: 50%;
         }
         .container_redes ul li a{
-            font-size: 50%;
+            font-size: 70%;
+        }
+        ul.submenu.active{
+            padding: 2px;
+        }
+        ul.submenu li{
+            font-size: 4px;
+            margin: 4px;
+            padding: 4px;
         }
     }
 
@@ -569,11 +591,10 @@ html {
 /*-----------------Responsive------------------*/
     @media (max-width: 768px){
         .indexTotal{
-        display: flex;
-        flex-direction:column;
-        overflow: hidden;
-        align-items: center;
-
+            display: flex;
+            flex-direction:column;
+            overflow: hidden;
+            align-items: center;
         }
         .container_carrusel{
             width: 100%;
