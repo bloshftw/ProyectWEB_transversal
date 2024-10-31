@@ -17,59 +17,67 @@
 /*-------------------------------------------------------------*/
 /* Hamburguesa */
 .menu-hamburguesa {
-    display: none; /* Oculto por defecto */
+    display: none; 
     font-size: 24px;
     color: var(--Colorf0);
     cursor: pointer;
 }
 
 nav {
-    position: relative; /* Cambia a relative para que el menú se posicione respecto a nav */
+    position: relative; 
 }
 
 #nav-menu {
-    display: flex; /* Muestra el menú en pantallas grandes */
+    display: flex; 
 }
 
-/* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu-hamburguesa {
-        display: block; /* Muestra el menú hamburguesa en pantallas pequeñas */
+        display: block; 
     }
 
     #nav-menu {
-        display: none; /* Oculta el menú de navegación por defecto en pantallas pequeñas */
-        flex-direction: column; /* Cambia a columna */
-        position: absolute; /* Posiciona el menú en la parte superior */
-        top: 30px; /* Ajusta según sea necesario */
+        display: none; 
+        flex-direction:column; /* Cambia a columna */
+        position: fixed; /* Posiciona el menú en la parte superior */
+        top: 42px; /* Ajusta según sea necesario */
         left: 0; /* Alínea a la izquierda */
-        width: auto; /* Cambia a auto para que ajuste al contenido */
-        background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
-        z-index: 2;
-        padding: 0; /* Elimina padding */
-        margin: 0; /* Elimina margen */
+        width: 100%; /* Cambia a auto para que ajuste al contenido */
+        background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+        z-index: 1000;
+        padding: 0;
+        margin: 0; 
     }
 
     #nav-menu.show {
-        display: flex; /* Muestra el menú cuando está activado */
+        display: flex; 
     }
 
     nav ul {
-        flex-direction: column; /* Cambia a columna */
-        padding: 0; /* Elimina padding */
-        margin: 0; /* Elimina margen */
-        list-style-type: none; /* Elimina viñetas */
+        flex-direction:row; 
+        padding: 0; 
+        margin: 0; 
+        list-style-type: none; 
     }
 
     nav ul li {
         text-align: left; /* Alinea a la izquierda */
         padding: 10px; /* Espaciado */
         border-bottom: 0px; /* Un borde opcional entre las opciones */
-        margin: 0; /* Elimina margen */
+        margin: 0; 
+        z-index: 9999;
     }
 }
-
-
+@media (max-width: 426px){
+    #nav-menu {
+        top: 36px; /* Ajusta según sea necesario */
+    }
+}
+@media (max-width: 377px){
+    #nav-menu {
+        top: 34px; /* Ajusta según sea necesario */
+    }
+}
 /* Fin hamburguesa */
 
 /* CARRUSEL */
@@ -116,7 +124,7 @@ nav {
     top: 50%;
     transform: translateY(-50%);
     color: var(--Colorf0);
-    z-index: 10;
+    z-index: 2;
 }
 
 #prev {
