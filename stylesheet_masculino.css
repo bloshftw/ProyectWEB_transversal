@@ -122,10 +122,18 @@ nav {
     .container_carrusel{
         height: 300px;
     }
+    .carousel-title{
+        background-color: transparent;
+        padding: 0;
+        font-size: 2rem;
+    }
 }
 @media(max-width: 500px){
     .container_carrusel{
         height: 200px;
+    }
+    .carousel-title{
+        font-size: 1rem;
     }
 }
 .carousel-img {
