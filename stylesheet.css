@@ -13,6 +13,7 @@
     --Color-Fondo: #f9f9f9;
     --Color-Titulo: #333;
     --Color-Texto: #666;
+    --Color-Nosotros: #2cb45b;
   }
 /*-------------------------------------------------------------*/
 /* Hamburguesa */
@@ -254,12 +255,15 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.nosotros{
+    color: var(--Color-Nosotros);
 }
 
 .title_nosotros h3{
     font-size: 3rem;
-    color: var(--Color-Titulo);
+    color: var(--Color-Nosotros);
 }
 
 /*TITULO NOSOTROS FIN*/
@@ -439,6 +443,13 @@ html {
         margin-bottom: 20px;
     }
 
+/*texto DONDE ESTAMOS*/
+
+.dondeEstamos_texto{
+
+    padding-top: 20px;
+}
+
     /* Responsive para pantallas pequeñas */
     @media (max-width: 768px) {
         .container_donde-encontrarnos_title h3 {
@@ -527,75 +538,7 @@ html {
 
 /*SECCION CANAL DE DIFUSION FINAL*/
 
-/*SECCION CONTACTO FORMULARIO INICIO*/
 
-/* Título del formulario */
-    h6 {
-        font-size: 2.2rem;
-        color: var(--Color-Titulo);
-        margin-bottom: 20px;
-    }
-
-/* Estilos para el formulario */
-    .form {
-        font-family: var(--fuente-Arial);
-        background-color: var(--Color-Fondo);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        margin: 0;
-    }
-    .form-container{
-        background-color: var(--Colorf0);
-        padding: 20px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 400px;
-        text-align: center;
-
-    }
-
-    label {
-        align-self: flex-start;
-        margin-bottom: 5px;
-    }
-
-    input, textarea {
-        padding: 10px;
-        margin-bottom: 15px;
-        width: 100%;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-
-    button {
-        padding: 10px 20px;
-        background-color: #4CAF50;
-        color: var(--Colorf0);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    button:hover {
-        background-color: #45a049;
-    }
-
-/* Mensajes de error y éxito */
-    .error {
-        color: red;
-        font-size: 12px;
-    }
-
-    .success {
-        color: green;
-        margin-top: 20px;
-    }
-
-/*SECCION CONTACTO FORMULARIO FINAL*/
 /*-----------------Responsive------------------*/
     @media (max-width: 768px){
         .indexTotal{
