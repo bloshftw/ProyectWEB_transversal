@@ -38,7 +38,6 @@ nav {
     .menu-hamburguesa {
         display: block; 
     }
-
     #nav-menu {
         display: none; 
         flex-direction:column; 
@@ -51,24 +50,49 @@ nav {
         padding: 0;
         margin: 0; 
     }
-
     #nav-menu.show {
         display: flex; 
     }
-
     nav ul {
         flex-direction:row; 
         padding: 0; 
         margin: 0; 
         list-style-type: none; 
     }
-
     nav ul li {
         text-align: left; /* Alinea a la izquierda */
         padding: 10px; /* Espaciado */
         border-bottom: 0px; /* Un borde opcional entre las opciones */
         margin: 0; 
         z-index: 9999;
+    }
+    ul.submenu.active{
+        padding: 3px;
+    }
+    ul.submenu li{
+        font-size: 5px;
+        margin: 5px;
+        padding: 5px;
+    }
+    ul.submenu2.active{
+        padding: 4px;
+    }
+    ul.submenu2 li{
+        font-size: 4px;
+        margin: 4px;
+        padding: 4px;
+    }
+}
+@media (max-width: 500px) {
+    ul.submenu2.active{
+        padding: 1px;
+    }
+    ul.submenu2 li{
+        margin: 1px;
+        padding: 1px;
+    }
+    ul.submenu2 li a{
+        font-size: 10px;
     }
 }
 @media (max-width: 426px){
@@ -133,6 +157,7 @@ html {
 
 /*SLIDER CATEGORIAS*/
 .submenu {
+
     display: none;
     position: absolute;
     top: 100%; 
@@ -141,6 +166,7 @@ html {
     padding: 10px;
     list-style: none;
     z-index: 1;
+
 }
 
 .submenu li {
@@ -150,14 +176,41 @@ html {
 .submenu li a {
     color: var(--Colorf0);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 150%;
 }
 
 .submenu.active {
     display: block;
     animation: slideDown 0.4s ease;
 }
+.submenu2 {
 
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+
+}
+
+.submenu2 li {
+    margin: 10px 0px;
+}
+
+.submenu2 li a {
+    color: var(--Colorf0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.submenu2.active {
+    display: block;
+    animation: slideDown 0.4s ease;
+}
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -214,17 +267,17 @@ img{
 
 @media (max-width: 769px) {
     .column{
-        flex: 60%;
+        flex: 30%;
     }
 }
 @media (max-width: 436px) {
     .column{
-        flex: 80%;
+        flex: 60%;
     }
 }
 @media (max-width: 321px) {
     .column{
-        flex: 100%;
+        flex: 80%;
     }
 }
 

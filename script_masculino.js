@@ -59,8 +59,17 @@ document.addEventListener('DOMContentLoaded', function() {
     const submenu = document.querySelector('.submenu');
 
     categoriasBtn.addEventListener('click', function(event) {
-        event.preventDefault(); //
-        submenu.classList.toggle('active'); // Mostrar/ocultar el submenú
+        event.preventDefault(); 
+        submenu.classList.toggle('active'); 
+    });
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const galeriaCategoriasBtn = document.getElementById('galeria-categorias');
+    const submenu = document.querySelector('.submenu2');
+
+    galeriaCategoriasBtn.addEventListener('click', function(event) {
+        event.preventDefault();
+        submenu.classList.toggle('active'); 
     });
 });
 

@@ -269,7 +269,34 @@ html {
     display: block;
     animation: slideDown 0.4s ease;
 }
+.submenu2 {
 
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    list-style: none;
+    z-index: 1;
+
+}
+
+.submenu2 li {
+    margin: 10px 0px;
+}
+
+.submenu2 li a {
+    color: var(--Colorf0);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+.submenu2.active {
+    display: block;
+    animation: slideDown 0.4s ease;
+}
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -499,7 +526,27 @@ html {
         padding: 5px;
         z-index: 9999;
     }
+    ul.submenu2.active{
+        padding: 4px;
+    }
+    ul.submenu2 li{
+        font-size: 4px;
+        margin: 4px;
+        padding: 4px;
+    }
 
+}
+@media (max-width: 500px) {
+    ul.submenu2.active{
+        padding: 1px;
+    }
+    ul.submenu2 li{
+        margin: 1px;
+        padding: 1px;
+    }
+    ul.submenu2 li a{
+        font-size: 10px;
+    }
 }
 @media (max-width: 400px) {
     nav ul li a{
