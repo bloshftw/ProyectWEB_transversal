@@ -220,8 +220,10 @@ html {
     position: absolute;
     top: 100%; 
     left: 0;
+    width: 7.8em;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
+    padding: 5px 9px;
+    margin: 0px 5px;
     list-style: none;
     z-index: 1;
 
